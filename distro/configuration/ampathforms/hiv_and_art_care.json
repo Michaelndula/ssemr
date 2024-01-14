@@ -155,15 +155,15 @@
                 "answers": [
                   {
                     "concept": "c2222941-3f10-11e4-adec-0800271c1b75",
-                    "label": "Occupation - Unemployed"
+                    "label": "Unemployed"
                   },
                   {
                     "concept": "0819d4ce-4da6-4b89-9c6c-e2878b842f85",
-                    "label": "Occupation - Student"
+                    "label": "Student"
                   },
                   {
                     "concept": "d56c17b5-501a-4d2d-b1bb-2cb80e4da056",
-                    "label": "Occupation - Housewife"
+                    "label": "Housewife"
                   },
                   {
                     "concept": "f3518564-c580-4663-acce-021369fea26f",
@@ -171,23 +171,23 @@
                   },
                   {
                     "concept": "3be283c2-a773-419f-98e0-9b912d26f5f9",
-                    "label": "Occupation - Military Personnel"
+                    "label": "Military Personnel"
                   },
                   {
                     "concept": "3d124657-7776-4f0d-9e96-49f14b20d7f4",
-                    "label": "Occupation - Other uniformed forces"
+                    "label": "Other uniformed forces"
                   },
                   {
                     "concept": "94d8dc78-0e00-4525-81bc-31db6961bc5e",
-                    "label": "Occupation - Business/trader"
+                    "label": "Business/trader"
                   },
                   {
                     "concept": "0c493079-9882-47e5-9a10-361405560678",
-                    "label": "Occupation - Farmer"
+                    "label": "Farmer"
                   },
                   {
                     "concept": "f6ae430a-a197-426e-b54f-08f45fae0ad0",
-                    "label": "Occupation - Other (Specify)"
+                    "label": "Other (Specify)"
                   }
                 ]
               },
@@ -633,7 +633,7 @@
                     "isSimpleValue": true
                   },
                   "hide": {
-                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberHivDuringMapping !== 'true'"
+                    "hideWhenExpression": "isEmpty(familyMemberOnART) || familyMemberOnART !== 'true'"
                   },
                   "validators": []
                 }
@@ -702,6 +702,31 @@
               "label": "If Yes, ARVs Received in",
               "type": "obs",
               "required": true,
+              "id": "arvReceivedYesFemaleChild",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "6d75a232-9d41-46b6-a986-0551ce0b99c1",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "PEP",
+                    "concept": "bcb584dd-d241-4c2f-a6b6-88b01a1ae13f"
+                  },
+                  {
+                    "label": "Earlier ART not Transfer in",
+                    "concept": "066b35ad-f206-4d00-992a-b068ff9f8089"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "sex === 'M' || age > 15 || isEmpty(arvReceived) || arvReceived !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              },
+              "validators": []
+            },
+            {
+              "label": "If Yes, ARVs Received in",
+              "type": "obs",
+              "required": true,
               "id": "arvReceivedYes",
               "questionOptions": {
                 "rendering": "select",
@@ -723,7 +748,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || isEmpty(arvReceived) || arvReceived !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+                "hideWhenExpression": "sex === 'M' || age <= 15 || isEmpty(arvReceived) || arvReceived !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": []
             },
@@ -840,7 +865,7 @@
             {
               "label": "CTX or Daspone Start Date",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "ctxStartDate",
               "questionOptions": {
                 "rendering": "date",
@@ -879,12 +904,15 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "WHO Stage",
               "id": "whoStage",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
                 "rendering": "select",
@@ -909,12 +937,15 @@
                 ]
               },
               "type": "obs",
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "Weight",
-              "id": "weiGht",
-              "required": true,
+              "id": "weight",
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "ca055d08-6cd7-4331-83bb-1d27dc5aa61f",
@@ -923,12 +954,21 @@
                 "max": 150
               },
               "type": "obs",
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(weight) || weight < 2.5 || weight > 150",
+                  "message": "Weight cannot be less than 2.5kg and should not exceed 150kg"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "Height(cm) / length for child<2yrs",
-              "id": "heiGht",
-              "required": true,
+              "id": "height",
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "4940b0bb-e1b0-44b9-803d-9720ee5743d8",
@@ -936,22 +976,38 @@
                 "min": 0
               },
               "type": "obs",
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(height) || height < 0",
+                  "message": "Height should not be less than 0"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+              }
             },
             {
               "label": "CD4 Count",
               "id": "cd4Count",
-              "required": true,
+              "required": false,
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "min": 0
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age <= 5"
+                "hideWhenExpression": "age <= 5 || isEmpty(sectionBlank) || sectionBlank !== 'false'"
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(cd4Count) || cd4Count < 0",
+                  "message": "CD4 Count should not be less than 0"
+                }
+              ]
             },
             {
               "label": "CD4 %",
@@ -960,15 +1016,25 @@
               "questionOptions": {
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
-                "rendering": "numeric"
+                "rendering": "numeric",
+                "min": 0
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age > 5"
+                "hideWhenExpression": "age > 5 || isEmpty(sectionBlank) || sectionBlank !== 'false'"
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(cd4Count) || cd4Count < 0",
+                  "message": "CD4% should not be less than 0"
+                }
+              ]
             }
-          ]
+          ],
+          "hide": {
+            "hideWhenExpression": "isEmpty(sectionBlank) || sectionBlank !== 'false'"
+          }
         }
       ]
     },
@@ -1014,7 +1080,7 @@
               "required": true,
               "historicalExpression": "HD.getObject('prevObs').getValue('23322fd6-3dbb-410e-8bee-6210dfcd5f71')",
               "questionOptions": {
-                "concept": "d1f02073-460c-4cd4-89b0-c16766e06334",
+                "concept": "18c93362-69c7-4343-bb3e-7e6fdae66307",
                 "rendering": "select",
                 "conceptMappings": [],
                 "answers": [
@@ -1053,6 +1119,126 @@
                   {
                     "label": "1J = TDF/FTC+NVP",
                     "concept": "03224cae-f115-4814-bd53-c99c72288446"
+                  },
+                  {
+                    "label": "2a=AZT/3TC+DTG",
+                    "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8"
+                  },
+                  {
+                    "label": "2b=ABC/3TC+DTG",
+                    "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa"
+                  },
+                  {
+                    "label": "2c=TDF+3TC+LPV/r",
+                    "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff"
+                  },
+                  {
+                    "label": "2d=TDF/3TC+ATV/r",
+                    "concept": "e649a0ec-e193-4af0-bb49-02687107a893"
+                  },
+                  {
+                    "label": "2e=TDF/FTC-LPV/r",
+                    "concept": "accca537-b8ee-41ec-b902-7de814d099b2"
+                  },
+                  {
+                    "label": "2f=TDF/FTC-ATV/r",
+                    "concept": "77f201fc-aefc-4068-baa7-cb3284782a38"
+                  },
+                  {
+                    "label": "2g=AZT/3TC+LPV/r",
+                    "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb"
+                  },
+                  {
+                    "label": "2h=AZT/3TC+ATV/r",
+                    "concept": "28790bde-81db-4490-806b-ac10c17b41dc"
+                  },
+                  {
+                    "label": "2i=ABC/3TC+LPV/r",
+                    "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b"
+                  },
+                  {
+                    "label": "2j=ABC/3TC+ATV/r",
+                    "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6"
+                  },
+                  {
+                    "label": "4a = AZT/3TC+NVP",
+                    "concept": "c224b116-27ec-4156-93ba-d4838a3ac1c0"
+                  },
+                  {
+                    "label": "4b = AZT/3TC +EFV",
+                    "concept": "5efe8d99-c65e-4136-8820-5f3646437ff7"
+                  },
+                  {
+                    "label": "4c = TDF/3TC (120/60) + LPV/r",
+                    "concept": "f8f64be8-ccb4-404d-b99e-3c4975155da5"
+                  },
+                  {
+                    "label": "4d = ABC/3TC (120/60) +DTG",
+                    "concept": "28c5d192-ba71-4ef5-8604-ecf6bd177126"
+                  },
+                  {
+                    "label": "4f = ABC/3TC +NVP",
+                    "concept": "0372f3fb-5e8a-474f-8250-01af7a485778"
+                  },
+                  {
+                    "label": "4g = TDF/3TC (120/60) + EFV (200mg)",
+                    "concept": "ce2412c4-a041-4328-bfaa-35e041ca4802"
+                  },
+                  {
+                    "label": "4h = TDF/FTC/EFV",
+                    "concept": "6ed47806-8809-4c5a-a1b6-fe2ec0158563"
+                  },
+                  {
+                    "label": "4i = ABC/3TC +LPV/r",
+                    "concept": "f6b1c6ea-b0a2-46a0-b7e0-3038d268356c"
+                  },
+                  {
+                    "label": "4J = AZT/3TC (60/30)+LPV/r",
+                    "concept": "2e1ab9d3-7fe1-48ba-a12c-fd8d26bc161d"
+                  },
+                  {
+                    "label": "4k = TDF/3TC+NVP",
+                    "concept": "99f54f96-e761-4d86-bb1b-0abc2a24fa16"
+                  },
+                  {
+                    "label": "4l = ABC +3TC + AZT",
+                    "concept": "2e96e432-ba6f-4e08-a500-7cba2663e6cd"
+                  },
+                  {
+                    "label": "5a = AZT/3TC+LPV/r",
+                    "concept": "b23cf614-dfec-48c9-a12f-ba577e28347d"
+                  },
+                  {
+                    "label": "5b = AZT/3TC +RAL",
+                    "concept": "dabc93c3-8c3d-41e1-b3e3-d7e14c4765b6"
+                  },
+                  {
+                    "label": "5c = ABC/3TC (120/60) + RAL",
+                    "concept": "da3c6710-c431-4582-a444-a466d54693ec"
+                  },
+                  {
+                    "label": "5d = AZT/3TC +ATV/r",
+                    "concept": "6c383d11-2b29-4cc2-bfa4-811ff7a988f1"
+                  },
+                  {
+                    "label": "5e = ABC/3TC + ATV/r",
+                    "concept": "82725d14-00c6-4864-bf8b-ad5db0b3c3fa"
+                  },
+                  {
+                    "label": "5f = TDF/3TC + ATV/r",
+                    "concept": "140ede93-5691-463b-9d17-2dc8834621f8"
+                  },
+                  {
+                    "label": "5g = AZT/3TC +DTG",
+                    "concept": "06017ac1-2ce8-4689-a3bf-4e9f3d54978f"
+                  },
+                  {
+                    "label": "5h = ABC/3TC + DTG*",
+                    "concept": "2c0a5b91-7b2a-4f8e-86fd-a8007841fca8"
+                  },
+                  {
+                    "label": "5i = ABC/3TC +LPV/r",
+                    "concept": "50b60d77-186d-4a0d-8784-659ee2d60ec9"
                   }
                 ]
               },
@@ -1237,7 +1423,7 @@
                       },
                       {
                         "label": "2c=TDF+3TC+LPV/r",
-                        "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93f"
+                        "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff"
                       },
                       {
                         "label": "2d=TDF/3TC+ATV/r",
