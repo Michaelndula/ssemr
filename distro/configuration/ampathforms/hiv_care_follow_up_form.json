@@ -50,7 +50,13 @@
                 "min": 0,
                 "isSimpleValue": true
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(durationDaysStartingArt) || durationDaysStartingArt < 0",
+                  "message": "Duration in months since first starting ART cannot be less than 0"
+                }
+              ]
             },
             {
               "label": "Duration in months since starting current regimen",
@@ -62,7 +68,13 @@
                 "min": 0,
                 "isSimpleValue": true
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(durationDaysStartingRegimen) || durationDaysStartingRegimen < 0",
+                  "message": "Duration in months since starting current regimen cannot be less than 0"
+                }
+              ]
             },
             {
               "label": "Weight",
@@ -76,7 +88,13 @@
                 "min": 0
               },
               "type": "obs",
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(weight) || weight < 0",
+                  "message": "Weight should not be less than 0"
+                }
+              ]
             },
             {
               "label": "Height(cm)",
@@ -90,7 +108,13 @@
                 "min": 2.5
               },
               "type": "obs",
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(height) || height < 2.5",
+                  "message": "Height should not be less than 2.5"
+                }
+              ]
             },
             {
               "label": "BMI for adult and children above 5 Years",
@@ -109,13 +133,20 @@
             {
               "label": "MUAC for children and pregnant mothers",
               "type": "obs",
+              "id": "muac",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "90f53912-95d5-4b5c-a9eb-81f3f937225e",
                 "max": "250",
                 "min": "0"
               },
-              "id": "muac"
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "muac < 0 || muac > 250",
+                  "message": "MUAC should not be less than 0 or higher that 250"
+                }
+              ]
             },
             {
               "label": "Current on FP",
@@ -138,7 +169,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M'"
+                "hideWhenExpression": "sex === 'M' || age < 15"
               },
               "validators": []
             },
@@ -196,7 +227,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M'"
+                "hideWhenExpression": "sex === 'M' || age < 15"
               },
               "validators": []
             },
@@ -210,7 +241,7 @@
                 "concept": "12118225-edad-45e2-9313-a5bca2cb4995"
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M' || pregStatus !== 'true'"
+                "hideWhenExpression": "sex === 'M' || age < 15 || pregStatus !== 'true'"
               },
               "validators": [
                 {
@@ -240,7 +271,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "sex === 'M'"
+                "hideWhenExpression": "sex === 'M' || age < 15"
               },
               "validators": []
             },
@@ -603,6 +634,31 @@
               },
               "hide": {
                 "hideWhenExpression": "typeOfTest !=='1b4f4df7-dddc-4e73-ab18-304c4fd12953'"
+              }
+            },
+            {
+              "label": "FNA, Culture, Ultrasound Done?",
+              "type": "obs",
+              "required": true,
+              "id": "fnaCultureUltrasound",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "true"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "false"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "typeOfTest !=='ad8ecb63-6b5d-49b2-9a9d-e16d7a0efc40'"
               }
             },
             {

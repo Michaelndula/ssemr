@@ -11,13 +11,13 @@
           "isExpanded": "true",
           "questions": [
             {
-							"label": "Date:",
-							"type": "encounterDatetime",
-							"questionOptions": {
-								"rendering": "ui-select-extended"
-							},
-							"id": "encDate"
-						},
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate"
+            },
             {
               "label": "Provider:",
               "type": "encounterProvider",
@@ -326,7 +326,10 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " sex === 'M' || age < 15"
+              }
             },
             {
               "label": "If Pregnant: EDD",
@@ -339,9 +342,15 @@
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " sex === 'M' || age < 15"
+              }
             }
-          ]
+          ],
+          "hide": {
+            "hideWhenExpression": " sex === 'M' || age < 15"
+          }
         }
       ]
     },
@@ -385,17 +394,44 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "BP(mmHg)",
+              "label": "BP Systolic(mmHg)",
               "type": "obs",
               "required": false,
-              "id": "bp",
+              "id": "bpSystolic",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "6cc7e952-5071-45e2-8c04-28cc45cf4666",
+                "concept": "14157864-dd9c-4b66-8412-a2f6a7e99d65",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(bpSystolic) || bpSystolic < 0",
+                  "message": "Boold Pressure Systolic should not be less than 0"
+                }
+              ]
+            },
+            {
+              "label": "BP diastolic(mmHg)",
+              "type": "obs",
+              "required": false,
+              "id": "bpDiastolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "3d01609f-e079-4646-a6d7-5057170d35ae",
+                "min": 0,
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(bpDiastolic) || bpDiastolic < 0",
+                  "message": "Boold Pressure Diastolic should not be less than 0"
+                }
+              ]
             },
             {
               "label": "RR",
@@ -405,10 +441,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "c37e0f37-3f10-11e4-adec-0800271c1b75",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(rr) || rr < 0",
+                  "message": "RR should not be less than 0"
+                }
+              ]
             },
             {
               "label": "Temperature",
@@ -418,10 +461,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "c37bd733-3f10-11e4-adec-0800271c1b75",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(temperature) || temperature < 0",
+                  "message": "Temperature should not be less than 0"
+                }
+              ]
             },
             {
               "label": "Weight(Kg)",
@@ -431,10 +481,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(weight) || weight < 0",
+                  "message": "Weight should not be less than 0"
+                }
+              ]
             },
             {
               "label": "Height(m)",
@@ -444,10 +501,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "9c667754-12cb-4fc6-9e89-61f6fdc99176",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(height) || height < 0",
+                  "message": "Height should not be less than 0"
+                }
+              ]
             },
             {
               "label": "BMI",
@@ -457,10 +521,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "c367d9ee-3f10-11e4-adec-0800271c1b75",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(bmi) || bmi < 0",
+                  "message": "BMI should not be less than 0"
+                }
+              ]
             },
             {
               "label": "MUAC",
@@ -470,10 +541,17 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "9f97c629-b1a0-42dc-bb2f-9227aad97d96",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
-              "validators": []
+              "validators": [
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "isEmpty(muac) || muac < 0",
+                  "message": "MUAC should not be less than 0"
+                }
+              ]
             }
           ]
         },
@@ -504,6 +582,20 @@
               "validators": []
             },
             {
+              "label": "Specify HEENT Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "heentAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "87dc3313-51ca-46bd-aeb7-059b1fc27bf6"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "heent !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
+            },
+            {
               "label": "Lymphoglandular system",
               "type": "obs",
               "required": false,
@@ -524,6 +616,20 @@
                 ]
               },
               "validators": []
+            },
+            {
+              "label": "Specify Lymphoglandular system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "lymphSystemAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "ae12c2b8-b34c-45f3-b479-4032e3cc598b"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "lymphSystem !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
             },
             {
               "label": "Respiratory",
@@ -548,7 +654,21 @@
               "validators": []
             },
             {
-              "label": "Cardiovascular   system",
+              "label": "Specify Respiratory Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "respiratoryAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9d590669-1920-416c-b929-1177943995b2"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "respiratory !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
+            },
+            {
+              "label": "Cardiovascular system",
               "type": "obs",
               "required": false,
               "id": "cardiovascularSystem",
@@ -568,6 +688,20 @@
                 ]
               },
               "validators": []
+            },
+            {
+              "label": "Specify Cardiovascular system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "cardiovascularSystemAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "9486f6d7-a54f-430b-b9cc-433f0144e2f1"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "cardiovascularSystem !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
             },
             {
               "label": "Abdomen",
@@ -592,7 +726,21 @@
               "validators": []
             },
             {
-              "label": "Genitourinary   system",
+              "label": "Specify Abdomen Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "abdomenAbnormalSpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "eb6897e0-055e-459a-b7a3-d229f3db76fc"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "abdomen !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
+            },
+            {
+              "label": "Genitourinary system",
               "type": "obs",
               "required": false,
               "id": "genitourinarySystem",
@@ -612,6 +760,20 @@
                 ]
               },
               "validators": []
+            },
+            {
+              "label": "Specify Genitourinary system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "genitourinarySystemAbnormalitySpecify",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "82e685e0-1131-448e-8d56-5e17c8f87285"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "genitourinarySystem !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
             },
             {
               "label": "Musculoskeletal   system",
@@ -636,6 +798,20 @@
               "validators": []
             },
             {
+              "label": "Specify Musculoskeletal system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "musculoskeletalSystemAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "e1f351e5-b81b-4e71-abf3-14a29c17065b"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "musculoskeletalSystem !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
+            },
+            {
               "label": "Skin",
               "type": "obs",
               "required": false,
@@ -658,6 +834,20 @@
               "validators": []
             },
             {
+              "label": "Specify Skin Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "skinAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "328ba182-8737-4956-9a52-5a9c7a4b0bb4"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "skin !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
+            },
+            {
               "label": "Nervous system",
               "type": "obs",
               "required": false,
@@ -678,6 +868,20 @@
                 ]
               },
               "validators": []
+            },
+            {
+              "label": "Specify Nervous system Abnormality",
+              "type": "obs",
+              "required": false,
+              "id": "nervousSystemAbnormality",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "5b822b80-1a1e-41bf-bdd0-f62fadd65752"
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "nervousSystem !== '5cd2823c-fa3b-47e4-9a20-9802ebbec8c5'"
+              }
             }
           ]
         },
@@ -686,13 +890,14 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "CD4",
+              "label": "CD4 (cells/mm3)",
               "type": "obs",
               "required": false,
               "id": "cd4",
               "questionOptions": {
                 "rendering": "number",
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
+                "min": 0,
                 "conceptMappings": [],
                 "answers": []
               },
@@ -715,7 +920,7 @@
               "required": false,
               "id": "whoStage1",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "87045f3e-ae61-4e53-8d8f-d14e92f06d0d",
                 "conceptMappings": [],
                 "answers": [
@@ -737,7 +942,7 @@
               "required": false,
               "id": "whoStage2",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "e7112b84-4321-41a9-8c04-c96c427dd7b6",
                 "conceptMappings": [],
                 "answers": [
@@ -783,7 +988,7 @@
               "required": false,
               "id": "whoStage3",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3",
                 "conceptMappings": [],
                 "answers": [
@@ -833,7 +1038,7 @@
               "required": false,
               "id": "whoStage4",
               "questionOptions": {
-                "rendering": "select",
+                "rendering": "multiCheckbox",
                 "concept": "489ff20e-5f04-4ca2-a46c-a86acd29567b",
                 "conceptMappings": [],
                 "answers": [
@@ -933,6 +1138,6 @@
   "processor": "EncounterFormProcessor",
   "encounterType": "81852aee-3f10-11e4-adec-0800271c1b75",
   "referencedForms": [],
-  "uuid": "cd494a2c-b97f-447c-8d23-f377d22091f8",
+  "uuid": "61636d1e-8861-46e0-868f-a83f71086a23",
   "description": "Adult and adolescent intake form"
 }
