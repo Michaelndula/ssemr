@@ -1,0 +1,62 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,Allow decimals ,Display precision,...,_version:5,_order:137,Data class,Data type,Answers
+ed520e2d-acb4-4ea9-8ae5-16ca27ace96d,,Date of Sample Collection,Date of Sample Collection,Date of Sample Collection,,,,,,Question,Date,
+9fc84874-ec1c-4f15-9e0d-5a73dd416667,,Time Sample Collected,Time,Time Sample Collected,yes,1,,,,Question,Numeric,
+c7b68a75-903e-4740-9482-bffc01fb844a,,"Sample Type ,DBS",DBS,"Sample Type ,DBS",,,,,,Misc,N/A,
+f0da3750-83bc-400e-b3f0-a0ced2e7e47f,,"Sample Type ,Plasma",Plasma,"Sample Type ,Plasma",,,,,,Misc,N/A,
+ff67ca7f-4e07-42f3-884e-7e36878b344e,,"Sample Type,Whole Blood",Whole Blood,"Sample Type,Whole Blood",,,,,,Misc,N/A,
+7b532bef-9232-4675-a359-7b1310b66d3a,,Sample Type,Sample Type,Sample Type,,,,,,Question,Coded,"Sample Type ,DBS ; Sample Type ,Plasma;Sample Type,Whole Blood"
+a7f1b0ac-9825-4018-b0b8-bae663f77133,,Sample Information,Sample Information,Sample Information,,,,,,Misc,N/A,
+44dba186-7507-41d4-811f-79eae073cdcc,,Date Of Treatment Initiation,Date Of Treatment Initiation,Date Of Treatment Initiation,,,,,,Question,Date,
+e288fc7d-bbc5-479a-b94d-857e3819f926,,Is the patient Breastfeeding?,Is patient Breastfeeding?,,,,,,,Question,Boolean,
+69b8377b-073a-476c-a6ab-1b3869c78202,,Current Regimen,Current Regimen,Current Regimen,,,,,,Question,Coded,1a = AZT/3TC+EFV
+30f1f347-d72c-4920-9962-6d55d138e8e5,,Date of Initiation of Current Regimen,Date of Initiation of Current Regimen,Date of Initiation of Current Regimen,,,,,,Question,Date,
+82a03cc2-89aa-4c6a-85d4-66bba07a6334,,Good > 95 %,Good > 95 %,Good > 95 %,,,,,,Misc,N/A,
+53b5adc3-a342-48fc-bff9-5981db672d06,,Fair  85 - 95 %,Fair  85 - 95 %,Fair  85 - 95 %,,,,,,Misc,N/A,
+a0173731-95aa-4380-ac3b-387fc794174f,,Poor > 85 %,Poor > 85 %,Poor > 85 %,,,,,,Misc,N/A,
+c253579e-c9ad-4c83-b322-6b1c34ce81c2,,Poor < 85 %,,,,,,,,Misc,N/A,
+e126652c-8d02-4c4b-a49d-5bac03eb4d03,,ARV Adherence,ARV Adherence,ARV Adherence,,,,,,Question,Coded,Good > 95 % ; Fair  85 - 95 % ;Poor < 85 %
+7890e12b-59a4-49bb-ab2a-c30f52b15380,,Treatment Information,Treatment Information,Treatment Information,,,,,,Misc,N/A,
+0ffdbc2e-8883-4648-905a-68ceab83bb6f,,"Last VL Date , Routine Monitoring",Last VL Date,"Last VL Date , Routine Monitoring",,,,,,Misc,Date,
+db923866-cfc6-47a5-8ae4-1e37d75db195,,"Viral Load Value , Routine Monitoring",Value,"Viral Load Value , Routine Monitoring",,,,,,Question,Numeric,
+c6c3ed1f-293a-4539-8825-c50ef758d9fc,,Routine Monitoring Summary,Summary,Routine Monitoring Summary,,,,,,Question,Text,
+53203e8a-d999-4795-a03d-9297978138b4,,Routine Monitoring Information,Routine Monitoring Information,Routine Monitoring Information,,,,,,Misc,N/A,
+acfbb9f8-8b3c-4f97-b47a-51851b063367,,"Last VL Date , Adherence Failure",Last VL Date,"Last VL Date , Adherence Failure",,,,,,Misc,Date,
+5ad34c7c-3a92-496c-b7d7-2210aca554bd,,"Viral Load Value , Adherence Failure",Value,"Viral Load Value , Adherence Failure",,,,,,Question,Numeric,
+631ee45d-7aca-46a8-b25b-ee4ac8a1eb13,,"Repeat Viral,Sample Collection Date",Sample Collection Date,"Repeat Viral,Sample Collection Date",,,,,,Question,Date,
+babfafcd-6525-43ab-aab4-74b3111973ec,,"Repeat Viral,Date of Arrival Of Results",Date of Arrival Of Results,"Repeat Viral,Date of Arrival Of Results",,,,,,Question,Date,
+d4f96600-c7d7-4749-9ca3-fd9318395b2d,,"VS,Viral Suppresion","VS,Viral Suppresion","VS,Viral Suppresion",,,,,,Misc,N/A,
+907031be-120c-4d90-ad7d-92139603ffdd,,"STF,Suspicion of Treatment Failure","STF,Suspicion of Treatment Failure","STF,Suspicion of Treatment Failure",,,,,,Misc,N/A,
+22a041cf-20bf-4d42-b942-061763bcfdbd,,"Repeat Viral,Outcome Action",Outcome Action,"Repeat Viral,Outcome Action",,,,,,Question,Coded,"VS,Viral Suppresion;STF,Suspicion of Treatment Failure"
+eed0db72-c496-46cb-88e0-44bcde059ee5,,Adherence Failure Summary,Summary,Adherence Failure Summary,,,,,,Question,Text,
+169ccf1f-63ef-4755-b1a9-2315fa8b4dfe,,VL Adherence Failure Information,Adherence Failure Information,Adherence Failure Information,,,,,,Misc,N/A,
+b3b195ff-0e6c-420f-bf60-483f24902066,,"Last VL Date, Suspected Treatment Failure",Last VL Date,"Last VL Date, Suspected Treatment Failure",,,,,,Misc,Date,
+7906cef9-4843-40f7-8fee-0e69cb00e7b8,,"Viral Load Value, Suspected Treatment Failure",Value,"Viral Load Value, Suspected Treatment Failure",,,,,,Question,Numeric,
+61f63362-fe1b-450a-8e0a-0f7026fb6afe,,Treatment Failure Summary,Summary,Treatment Failure Summary,,,,,,Question,Text,
+48e2db35-a1a3-425a-ad08-852d7a2d8acf,,VL Treatment Failure Information,Treatment Failure Information,VL Treatment Failure Information,,,,,,Misc,N/A,
+4f968437-31cf-4cd9-bccf-c594618d12f5,,Clinician Phone,Clinician Phone,Clinician Phone,,,,,,Question,Numeric,
+65dc2979-06b8-49b1-829b-39a8e0edd3ed,,Clinician Information,Clinician Information,Clinician Information,,,,,,Misc,N/A,
+db73e6cd-57e7-4cca-83b7-7d4c532c5621,,VL Focal Person ,VL Focal Person ,VL Focal Person ,,,,,,Question,Text,
+dff0ffef-5c14-458a-a4db-8b106daf3876,,VL  Focal Person Phone,Phone,VL  Focal Person Phone,,,,,,Question,Numeric,
+5508412a-cbcb-41ff-a838-ef2b46f78e2e,,Focal Person Information,Focal Person Information,Focal Person Information,,,,,,Misc,N/A,
+0bfdbae3-ea5d-4173-a4e1-7f42d50e0bc6,,Date Sample Received at Testing Lab,Date Sample Received at Testing Lab,Date Sample Received at Testing Lab,,,,,,Misc,Date,
+4db52045-d459-4c3e-b0b4-b7d00b18ed1e,,Date Results Dispatched,Date Results Dispatched,Date Results Dispatched,,,,,,Misc,Date,
+b853ddc3-3d8c-4b0b-99ac-497624c9904d,,Date Requested ,Date Requested ,Date Requested ,,,,,,Misc,Date,
+dfcedbb1-11fe-4e19-969c-f88539ebc31f,,Email,Email,Email,,,,,,Question,Text,
+b5d1c0b4-6cce-4a23-9754-60b6da6b5d88,,Was sample Rejected?,Rejected?,,,,,,,Question,Boolean,
+1754e917-3956-4032-b7f9-e54edfa1f9d0,,Rejection,Reason,Rejection Reason,,,,,,Question,Text,
+48ebc193-aa2b-4503-9846-430d226d1d80,,VL Sample Information,Sample Information,VL Sample Information,,,,,,Misc,N/A,
+c189da8e-b689-4b78-809d-72d1fa28ebf4,,Indication For VL Testing Information,Indication For VL Testing Information,Indication For VL Testing Information,,,,,,Misc,N/A,
+3832ac3f-50a8-481d-a470-5c634f7c25b8,,"Routine monitoring,Vl Testing",Routine monitoring,,,,,,,Misc,N/A,
+019e4c9c-0735-4753-8cbc-acf316e7e8fc,,"Repeat VL test after suspected treatment failure & adherence counseling 
+",,,,,,,,Misc,N/A,
+1c43c248-2cb6-4742-9ada-585c80714f65,,"Suspected treatment failure,Vl Testing
+",Suspected treatment failure,,,,,,,Misc,N/A,
+5ad4a511-5015-4b85-a321-cd8980391075,,Indication For VL Testing,,,,,,,,Question,Coded,"Routine monitoring,Vl Testing;
+Repeat VL test after suspected treatment failure & adherence counseling;
+Suspected treatment failure,Vl Testing"
+bf4d44d6-fe08-4abd-9c25-8c2a548cc873,,Viral Load Lab Request Form,Viral Load Lab Request Form,Viral Load Lab Request Form,,,,,,Misc,N/A,
+c8a48f18-eec2-462a-893a-fe8b36d37de3,,Vlab,Vlab,,,,,,,Misc,N/A,
+37f1e487-24f7-48f3-a347-391e877152e4,,First EAC Session,First EAC Session,First EAC Session,,,,,,Misc,N/A,
+348c5147-4e54-420a-a035-b322e1ba0b6e,,Second EAC Session,Second EAC Session,Second EAC Session,,,,,,Misc,N/A,
+60966dae-3999-42b9-aec1-6161cebb22c1,,Third EAC Session,Third EAC Session,Third EAC Session,,,,,,Misc,N/A,
+65536958-fc01-4002-8839-af4b6ab0489b,,Enhanced Adherence Sessions,EAC,Enhanced Adherence Sessions,,,,,,Question,Coded,"First EAC Session,Second EAC Session,Third EAC Session"

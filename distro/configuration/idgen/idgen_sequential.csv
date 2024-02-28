@@ -1,0 +1,8 @@
+Uuid,Void/Retire,Identifier type,Source Type,Name,Description,Prefix,Suffix,First identifier base,Min length,Max length,Base character set,_version:1,_order:6000
+c1d8a345-3f10-11e4-adec-0800271c1b75,yes,Patient Identifier,,GAN,,,,,,,,,
+c1d90956-3f10-11e4-adec-0800271c1b75,yes,Patient Identifier,,SEM,,,,,,,,,
+c1dbd8bd-3f10-11e4-adec-0800271c1b75,yes,Patient Identifier,,SIV,,,,,,,,,
+c1e39ece-3f10-11e4-adec-0800271c1b75,,Patient Identifier,Local Identifier Generator,CES/JTH-,ID sequence source for patients whose primary health center is Juba location,CES/JTH-,,4000,8,,1234567890,,
+02135532-87a4-4659-a9e7-7e71b7f7e9ac,,Patient Identifier,Local Identifier Generator,EES/NMC-,ID sequence source for patients whose primary health center is Nimule location,EES/NMC-,,1,8,,1234567890,,
+db498cf7-ff0c-4d67-a34d-1cafdca40ed7,,Patient Identifier,Local Identifier Generator,HEI,ID sequence source for HEI type patients,HEI,,5000,1,,1234567890,,
+e8ca5e98-c629-486a-b41c-9d4211a7388b,yes,Patient Identifier,,CES/JTH_Old,,,,,,,,,

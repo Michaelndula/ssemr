@@ -1,0 +1,21 @@
+Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:4,_order:138
+7b532bef-9232-4675-a359-7b1310b66d3a,"Sample Type ,DBS ; Sample Type ,Plasma;Sample Type,Whole Blood",,Sample Type,,Question,Coded,,
+a7f1b0ac-9825-4018-b0b8-bae663f77133,,Date of Sample Collection ; Time Sample Collected ; Sample Type,Sample Information,,Misc,N/A,,
+69b8377b-073a-476c-a6ab-1b3869c78202,1a = AZT/3TC+EFV,,Current Regimen,,Question,Coded,,
+e126652c-8d02-4c4b-a49d-5bac03eb4d03,Good > 95 % ; Fair  85 - 95 % ;Poor < 85 %,,ARV Adherence,,Question,Coded,,
+22a041cf-20bf-4d42-b942-061763bcfdbd,"VS,Viral Suppresion ; STF,Suspicion of Treatment Failure",,"Repeat Viral,Outcome Action",Outcome Action,Question,Coded,,
+e288fc7d-bbc5-479a-b94d-857e3819f926,,,Is the patient Breastfeeding?,,Question,Boolean,,
+7890e12b-59a4-49bb-ab2a-c30f52b15380,,"Date Of Treatment Initiation;Date of Initiation of Current Regimen;Pregnant;Is the patient Breastfeeding? ;ARV Adherence ",Treatment Information,,Misc,N/A,,
+5ad4a511-5015-4b85-a321-cd8980391075,"Routine monitoring,Vl Testing;
+Repeat VL test after suspected treatment failure & adherence counseling;
+Suspected treatment failure,Vl Testing",,Indication For VL Testing,,Question,Coded,,
+53203e8a-d999-4795-a03d-9297978138b4,,"Routine Monitoring ; Last VL Date , Routine Monitoring ;Viral Load Value , Routine Monitoring ; Routine Monitoring Summary",Routine Monitoring Information,,Misc,N/A,,
+169ccf1f-63ef-4755-b1a9-2315fa8b4dfe,,"Last VL Date , Adherence Failure; Repeat Viral,Sample Collection Date; Repeat Viral,Date of Arrival Of Results; Viral Load Value , Adherence Failure; Repeat Viral,Outcome Action ; Adherence Failure Summary",VL Adherence Failure Information,,Misc,N/A,,
+48e2db35-a1a3-425a-ad08-852d7a2d8acf,,"Suspected Treatment Failure ; Last VL Date, Suspected Treatment Failure ; Viral Load Value, Suspected Treatment Failure ;Treatment Failure Summary",VL Treatment Failure Information,,Misc,N/A,,
+65dc2979-06b8-49b1-829b-39a8e0edd3ed,,Clinician Name ; Clinician Phone,Clinician Information,,Misc,N/A,,
+5508412a-cbcb-41ff-a838-ef2b46f78e2e,,VL Focal Person ; VL  Focal Person Phone,Focal Person Information,,Misc,N/A,,
+b5d1c0b4-6cce-4a23-9754-60b6da6b5d88,,,Was sample Rejected?,Was Sample Rejected?,Question,Boolean,,
+48ebc193-aa2b-4503-9846-430d226d1d80,,Date Sample Received at Testing Lab ; Date Results Dispatched ; Date Requested ; Email ;Was sample Rejected?; Rejection,VL Sample Information,,Misc,N/A,,
+c189da8e-b689-4b78-809d-72d1fa28ebf4,,"Indication For VL Testing ; Last VL Date , Routine Monitoring ;Viral Load Value , Routine Monitoring ; Routine Monitoring Summary ; Last VL Date , Adherence Failure; Repeat Viral,Sample Collection Date; Repeat Viral,Date of Arrival Of Results; Viral Load Value , Adherence Failure; Repeat Viral,Outcome Action ; Adherence Failure Summary; Last VL Date, Suspected Treatment Failure ; Viral Load Value, Suspected Treatment Failure ;Treatment Failure Summary ;Clinician Information ; Focal Person Information ; VL Sample Information",Indication For VL Testing Information,,Misc,N/A,,
+bf4d44d6-fe08-4abd-9c25-8c2a548cc873,,"Sample Information ; Treatment Information ; Indication For VL Testing Information ",Viral Load Lab Request Form,,Misc,N/A,,
+c8a48f18-eec2-462a-893a-fe8b36d37de3,,"Sample Information ; Treatment Information ; Indication For VL Testing Information ",Vlab,,Misc,N/A,,

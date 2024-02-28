@@ -1,0 +1,2 @@
+uuid,Fully specified name:en,description:en,Data class,Data type,shortname:en,Members
+ff4a76f5-ac90-46c8-a737-318e22f6b818,Treatment Supporter,,ConvSet,Text,Treatment Supporter,TreatmentSupporterFirstName;TreatmentSupporterLastName;TreatmentSupporterTelephoneNumber;TreatmentSupporterAddress;HomeCareProvidedBy;

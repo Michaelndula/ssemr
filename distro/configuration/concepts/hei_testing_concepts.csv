@@ -1,0 +1,76 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:146,Data class,Data type,Answers
+c0747bba-c336-11e9-9cb5-2a2ae2dbcce4," ",HEI Testing (First PCR Test Date),Date,HEI Testing (First PCR Test Date),,,,Question,Date,
+c074802e-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (First PCR Feeding Method),Feeding Method,HEI Testing (First PCR Feeding Method),,,,Question,Coded,EBF(Exclusive Breastfeeding); CF(Complimentary Feeding >6months); RF-Replacement feeding(Never Breastfeed) ;  Weaning ; Mixed Feeding(> 6 Months) ; No longer Breastfeed
+6fdac0f0-2c92-4828-a612-884106b2c4e9,,Date Sample Dispatched to PHL(First PCR Test),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(First PCR Test),,,,Question,Date,
+a101d851-6b80-4c46-8d31-e90f27b4981d,,Date sample receipt by PHL confirmed(First PCR Test),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(First PCR Test),,,,Question,Date,
+9e44530f-4971-4539-ae5f-f04998e3f32d,,Was Sample Rejected(First PCR Test),Was Sample Rejected,Was Sample Rejected(First PCR Test),,,,Question,Boolean,
+0efcc389-4679-44d0-bd3e-7775805cf5dc,,HEI Results Positive,Positive,,,,,Misc,N/A,
+d857ce8a-ec52-4b02-a6dd-c9aa8a5dfeb9,,HEI Results Negative,Negative,,,,,Misc,N/A,
+e1f3e911-034b-4483-9d2c-98957ff30709,,HEI Testing (First PCR Results),Test Results,HEI Testing (First PCR Results),,,,Question,Coded,HEI Results Positive;HEI Results Negative
+c0748420-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (First PCR Date Result Given to Caregiver),Date Results Given To Caregiver,HEI Testing (First PCR Date Result Given to Caregiver),,,,Question,Date,
+9f4c3ccc-996f-4d00-ad17-bf1d431a949f,"",Age at 1st DBS(Months),Age at 1st DBS(Months),Age at 1st DBS,"","","",Question,Numeric,""
+6dd9eebb-dbf3-4e26-b9e5-d55766441880,"","First PCR,Date results received",Date results received,"First PCR,Date results received","","","",Question,Date,""
+641dd34a-2c7b-4fe0-8423-6b633869ffeb,"","First PCR,Date results delivered to facility",Date results delivered to facility,"First PCR,Date results delivered to facility","","","",Question,Date,""
+c07485d8-c336-11e9-9cb5-2a2ae2dbcce4,,First PCR Test Details,First PCR Test Details,First PCR Test Details,,,,Misc,N/A,
+c0748808-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Rapid Test At 9 Months Date),Date,HEI Testing (Rapid Test At 9 Date),,,,Question,Date,
+c0748952-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Rapid Test At 9 Months Feeding Method),Feeding Method,HEI Testing (Rapid Test At 9 Months Feeding Method),,,,Question,Coded,EBF(Exclusive Breastfeeding); CF(Complimentary Feeding >6months); RF-Replacement feeding(Never Breastfeed) ;  Weaning ; Mixed Feeding(> 6 Months) ; No longer Breastfeed
+4a6f0800-0a72-422c-9827-6f109b520c54,,Date Sample Dispatched to PHL(Rapid Test At 9 Months),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(Rapid Test At 9 Months),,,,Question,Date,
+0df46783-414a-45a3-9209-4b7dbbe2c203,,Date sample receipt by PHL confirmed(Rapid Test At 9 Months),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(Rapid Test At 9 Months),,,,Question,Date,
+88934459-4f43-4b9b-9fae-6e9d9be9d14e,,Was Sample Rejected(Rapid Test At 9 Months),Was Sample Rejected,Was Sample Rejected(Rapid Test At 9 Months),,,,Question,Boolean,
+429bef39-53c9-4dec-abd9-01c3ce33073e,,HEI Testing (Rapid Test At 9 Months Results),Test Results,HEI Testing (Rapid Test At 9 Months Result),,,,Question,Coded,HEI Results Positive;HEI Results Negative
+c0748c36-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Rapid Test At 9 Months Date Result Given to Caregiver),Date Results Given To Caregiver,HEI Testing (Rapid Test At 9 Months Date Result Given to Caregiver),,,,Question,Date,
+c0748e34-c336-11e9-9cb5-2a2ae2dbcce4,,Rapid Test At 9Months Details,Rapid Test At 9Months Details,Rapid Test At 9Months Details,,,,Misc,N/A,
+c0748fe2-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Second PCR Test Date),Date,HEI Testing (Second PCR Test Date),,,,Question,Date,
+c0749186-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Second PCR Feeding Method),Feeding Method,HEI Testing (Second PCR Feeding Method),,,,Question,Coded,EBF(Exclusive Breastfeeding); CF(Complimentary Feeding >6months); RF-Replacement feeding(Never Breastfeed) ;  Weaning ; Mixed Feeding(> 6 Months) ; No longer Breastfeed
+4fba4764-0a9a-42af-95e7-ced980fa79f5,,Date Sample Dispatched to PHL(Second PCR Test),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(Second PCR Test),,,,Question,Date,
+9cce509c-c3d9-4519-9735-daf430ed7b13,,Date sample receipt by PHL confirmed(Second PCR Test),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(Second PCR Test),,,,Question,Date,
+44415431-6038-4daa-ae2b-687e59237f7f,,Was Sample Rejected(Second PCR Test),Was Sample Rejected,Was Sample Rejected(Second PCR Test),,,,Question,Boolean,
+96279431-4136-4289-923b-35a4e02be649,,HEI Testing (Second PCR Results),Test Results,HEI Testing (Second PCR Result),,,,Question,Coded,HEI Results Positive;HEI Results Negative
+c074953c-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Second PCR Date Result Given to Caregiver),Date Results Given To Caregiver,HEI Testing (Second PCR Date Result Given to Caregiver),,,,Question,Date,
+14628fb6-9c0f-4ae3-bd64-87971bf7f473,"","Second PCR,Age at 2nd DBS (Months)",Age at 2nd DBS (Months),"Second PCR,Age at 2nd DBS (Months)","","","","Question ",Numeric,""
+72e84564-7550-4524-914b-42c216e06a3f,"","Second PCR,Date result Received",Date result Received,"Second PCR,Date result Received","","","",Question,Date,""
+c7ae17bf-2a31-4d5c-ab75-ce04bbb7dff2,"",For confirmation of positive first DNA PCR test result,For confirmation of positive first DNA PCR test result,For confirmation of positive first DNA PCR test result,"","","",Misc,N/A,""
+5d2afa51-4ee5-435f-854f-e81db8943f7d,"",For Repeat DNA PCR 6 weeks after weaning for children less than 9 months,For Repeat DNA PCR 6 weeks after weaning for children less than 9 months,For Repeat DNA PCR 6 weeks after weaning for children less than 9 months,"","","",Misc,N/A,""
+ceebace6-461f-4fff-a53e-0d41614e6760,"",For positive HIV rapid test result at 9 months or thereafter,For positive HIV rapid test result at 9 months or thereafter,For positive HIV rapid test result at 9 months or thereafter,"","","",Misc,N/A,""
+4c8b7c66-afa8-4b5a-9fed-c792e9582caf,"",Reason For Second PCR,Reason For Second PCR,Reason For Second PCR,"","","",Question,Coded,For confirmation of positive first DNA PCR test result;For positive HIV rapid test result at 9 months or thereafter;For positive HIV rapid test result at 9 months or thereafter
+c0749672-c336-11e9-9cb5-2a2ae2dbcce4,,"Second PCR Details ","Second PCR Details ",HEI Testing (Second PCR Details ),,,,Misc,N/A,
+c07497ee-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Repeat PCR Test Date),Date,HEI Testing (Repeat PCR Test Date),,,,Question,Date,
+c07499d8-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Repeat PCR Feeding Method),Feeding Method,HEI Testing (Repeat PCR Feeding Method),,,,Question,Coded,EBF(Exclusive Breastfeeding); CF(Complimentary Feeding >6months); RF-Replacement feeding(Never Breastfeed) ;  Weaning ; Mixed Feeding(> 6 Months) ; No longer Breastfeed
+34b5991f-8aa0-4dba-a278-c8ddb922065b,,Date Sample Dispatched to PHL(Repeat PCR Test),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(Repeat PCR Test),,,,Question,Date,
+0a6bf280-8b22-49d1-a271-e81faca68f24,,Date sample receipt by PHL confirmed(Repeat PCR Test),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(Repeat PCR Test),,,,Question,Date,
+42a1120d-aa64-440d-9c29-a11841728b9c,,Was Sample Rejected(Repeat PCR Test),Was Sample Rejected,Was Sample Rejected(Repeat PCR Test),,,,Question,Boolean,
+45d13859-dc69-4339-80a0-88300d27ac4b,,HEI Testing (Repeat PCR Results),Test Results,HEI Testing (Repeat PCR Result),,,,Question,Coded,HEI Results Positive;HEI Results Negative
+c0749cd0-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (Repeat PCR Date Result Given to Caregiver),Date Results Given To Caregiver,HEI Testing (Repeat PCR Date Result Given to Caregiver),,,,Question,Date,
+c0749eb0-c336-11e9-9cb5-2a2ae2dbcce4,,Repeat PCR Details,Repeat PCR Details,Repeat PCR Details,,,,Misc,N/A,
+c0749ffa-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (18Months Rapid Test Date),Date,HEI Testing (18Months Rapid Test Date),,,,Question,Date,
+c074a1e4-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (18Months Rapid Test Feeding Method),Feeding Method,HEI Testing (18Months Rapid Test Feeding Method),,,,Question,Coded,EBF(Exclusive Breastfeeding); CF(Complimentary Feeding >6months); RF-Replacement feeding(Never Breastfeed) ;  Weaning ; Mixed Feeding(> 6 Months) ; No longer Breastfeed
+a9dd2bcc-dad8-4537-87f0-486afd6bb374,,Date Sample Dispatched to PHL(18Months Rapid Test),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(18Months Rapid Test),,,,Question,Date,
+b6abaeba-2d44-4b58-89dc-242d60a099fe,,Date sample receipt by PHL confirmed(18Months Rapid Test),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(18Months Rapid Test),,,,Question,Date,
+13c300cc-54b0-4f56-99f9-94a7ae10d813,,Was Sample Rejected(18Months Rapid Test),Was Sample Rejected,Was Sample Rejected(18Months Rapid Test),,,,Question,Boolean,
+765fcaf8-e02a-4d47-a8d8-f1bd0f2871e2,,HEI Testing (18Months Rapid Test  Results),Test Results,HEI Testing (18Months Rapid Test  Result),,,,Question,Coded,HEI Results Positive;HEI Results Negative
+376f1036-0dd2-4169-834d-aa6359279ea9,"",Age at 18Months Rapid Test,Age,Age at 18Months Rapid Test,"","","",Question,Numeric,""
+c074a586-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Testing (18Months Rapid Test Date Result Given to Caregiver),Date Results Given To Caregiver,HEI Testing (18Months Rapid Test Date Result Given to Caregiver),,,,Question,Date,
+c074a6da-c336-11e9-9cb5-2a2ae2dbcce4,,18Months Rapid Test Details,18Months Rapid Test Details,18Months Rapid Test Details,,,,Misc,N/A,
+9754d051-4000-40cd-85ea-4e215758335c,,Date Sample Dispatched to PHL(Final Result),Date Sample Dispatched to PHL,Date Sample Dispatched to PHL(Final Result),,,,Question,Date,
+08c0941e-0bdb-481d-b991-7061e82ff013,,Date sample receipt by PHL confirmed(Final Result),Date sample receipt by PHL confirmed,Date sample receipt by PHL confirmed(Final Result),,,,Question,Date,
+74306ed8-ee6e-4e27-a43e-94f7205a2823,,Was Sample Rejected(Final Result),Was Sample Rejected,Was Sample Rejected(Final Result),,,,Question,Boolean,
+c074a8a6-c336-11e9-9cb5-2a2ae2dbcce4,,"HEI Testing(Final Result) ",Final Result,"HEI Testing(Final Result) ",,,,Question,Coded,HEI Results Positive;HEI Results Negative
+c074aafe-c336-11e9-9cb5-2a2ae2dbcce4,,"Linkage to Care/Treatment ","Linkage to Care/Treatment ","Linkage to Care/Treatment ",,,,Misc,N/A,
+0b1145be-1d99-46c4-a3f4-e1189e3eddbc,"","HEI Treatment,Date ART initiated",Date ART initiated,"HEI Treatment,Date ART initiated","","","",Question,Date,""
+ce9329ae-c477-416c-bf42-ec103c3fe8cf,"","HEI Treatment,Reason if HIV infected infant not initiated on ART",Reason if HIV infected infant not initiated on ART,"HEI Treatment,Reason if HIV infected infant not initiated on ART","","","",Question,Text,""
+c074ac52-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Treatment - Referred To ART Clinic,Referred To ART Clinic,HEI Treatment - Referred To ART Clinic,,,,Question,Boolean,
+c074ae28-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Treatment - Referred To ART Clinic Date,Referred Date,HEI Treatment - Referred To ART Clinic Date,,,,Question,Date,
+c074af68-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Treatment - Enrolled AT ART Clinic,Enrolled At ART Clinic,HEI Treatment - Enrolled AT ART Clinic,,,,Question,Boolean,
+c074b198-c336-11e9-9cb5-2a2ae2dbcce4,,HEI Treatment - Enrolled AT ART Date,Enrolled Date,HEI Treatment - Enrolled AT ART Date,,,,Question,Date,
+c074b2ec-c336-11e9-9cb5-2a2ae2dbcce4,,Was the Referral Presumptive?,Was the Referral Presumptive?,Was the Referral Presumptive?,,,,Question,Boolean,
+d0e77df2-78b3-4e5d-b286-f1cb197fd655,"",EID - Date result was delivered to the facility,Date result was delivered to the facility,Date result was delivered to the facility,"","","",Question,Date,""
+d88bbbab-486c-4792-8594-7d6cb4b31c8e,"",EID Number,EID Number,EID Number,"","","",Question,Numeric,""
+23cd4029-958d-4fca-9f8a-40221a2de48b,"",EID - Age at 1st EID,Age at 1st EID,Age at 1st EID,"","","",Question,Numeric,""
+303a85af-8ed9-44d2-831d-b25324b9b46c,"",Date EID sample collected,Date EID sample collected,Date EID sample collected,"","","",Question,Date,""
+05dedc01-77cd-450a-b429-a6652914fe23,"","24Months Outcome,HIV infected",HIV Infected,"24Months Outcome,HIV infected","","","",Misc,N/A,""
+c0f6c378-53e2-45de-b88e-3bc0ee461c5a,"","24Months Outcome,HIV uninfected",HIV uninfected,"24Months Outcome,HIV uninfected","","","",Misc,N/A,""
+d4cc6b35-56fc-4ab7-81b5-21c44324816e,"","24Months Outcome,HIV Final Status Unknown",HIV Final Status Unknown,"24Months Outcome,HIV Final Status Unknown","","","",Misc,N/A,""
+2a7efcbb-7af6-464b-a646-fdf834665289,"","24Months Outcome,Died without status known",Died without status known,"24Months Outcome,Died without status known","","","",Misc,N/A,""
+3469de43-d65a-47a5-80da-7d9cea342fd5,"",Final outcome at 24 months of age,Final outcome at 24 months of age,Final outcome at 24 months of age,"","","",Question,Coded,"24Months Outcome,HIV infected;24Months Outcome,HIV uninfected;24Months Outcome,HIV Final Status Unknown;24Months Outcome,Died without status known"
+aaeff47b-8bd5-4c45-a0d3-60de81eb6b5c,"",EID Details,EID Details,EID Details,"","","",Misc,N/A,""
+c074b65c-c336-11e9-9cb5-2a2ae2dbcce4,,HEI TESTING INFORMATION,HEI TESTING INFORMATION,HEI TESTING INFORMATION,,,,Misc,N/A,

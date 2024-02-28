@@ -1,0 +1,23 @@
+<addressConfiguration>
+    <addressComponents>
+		<addressComponent>
+            <field>LANDMARK</field>
+            <nameMapping>Location.neighborhood</nameMapping>
+            <sizeMapping>40</sizeMapping>
+			<elementDefault>addresshierarchy.healthFacility</elementDefault>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>VILLAGE</field>
+            <nameMapping>Location.cityVillage</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>false</requiredInHierarchy>
+        </addressComponent>
+	</addressComponents>
+    <lineByLineFormat/>
+    <addressHierarchyFile>
+        <filename>ihs_address_hierachy.csv</filename>
+        <entryDelimiter>,</entryDelimiter>
+        <identifierDelimiter>^</identifierDelimiter>
+    </addressHierarchyFile>
+</addressConfiguration>

@@ -1,0 +1,51 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:3,_order:144,Data class,Data type,Answers
+c266e0c2-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (First Attempt Date),Date,Hei End Of Follow up (First Attempt Date),,,,Question,Date,
+7bdd4c96-cb9d-4b8f-9e9c-13bd1a60c5a3,,Clinical Assessment,Clinical Assessment,Clinical Assessment,,,,Misc,N/A,
+9f4214ee-f89a-4675-8762-2a821cb521e1,,PCR,PCR,PCR,,,,Misc,N/A,
+2587af85-feb5-4b0a-87fe-b84372a4d657,,First Attempt Other Follow up Method,Other Specify,Other Follow up Method,,,,Misc,N/A,
+04ad1725-9bdd-4ab0-8ccd-1ab46692b7b3,,Other Follow up Method Specify(First Attempt),Specify,Other Follow up Method Specify(First Attempt),,,,Question,Text,
+c266e39c-c32a-11e9-9cb5-2a2ae2dbcce4,,First Attempt Method,Method,Hei End Of Follow up (First Attempt Method),,,,Question,Coded,Clinical Assessment;PCR;First Attempt Other Follow up Method
+ed859b95-c1e0-43d0-b202-9c330112dd76,,Follow up Outcome Positive(First Attempt),Positive,Follow up Outcome Positive(First Attempt),,,,Misc,N/A,
+124fc5b6-3727-4cf1-9940-d678a2d577d5,,Follow up Outcome Negative(First Attempt),Negative,Follow up Outcome Negative(First Attempt),,,,Misc,N/A,
+3a88456a-8ba7-45b0-bdc8-db6ddefba2aa,,Follow up Outcome Others(First Attempt),Other Outcome,Follow up Outcome Others(First Attempt),,,,Misc,N/A,
+281443f3-7b69-4e21-945a-5b6d8f022747,,Follow up Outcome Others Specify(First Attempt),Others Specify,Follow up Outcome Others Specify(First Attempt),,,,Question,Text,
+c266e4f0-c32a-11e9-9cb5-2a2ae2dbcce4,,First Attempt Outcome,Outcome,Hei End Of Follow up (First Attempt Outcome),,,,Question,Coded,Follow up Outcome Positive(First Attempt);Follow up Outcome Negative(First Attempt);First Attempt Other Follow up Method
+c266e626-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (First Attempt Details),First Attempt,Hei End Of Follow up (First Attempt Details),,,,Misc,N/A,
+c266e75c-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Second Attempt Date),Date,Hei End Of Follow up (Second Attempt Date),,,,Question,Date,
+3f5d96a5-d452-4e59-a1ee-dd111134caa6,,Other Follow up Method(Second Attempt),Other Specify,Other Follow up Method,,,,Misc,N/A,
+c6a70e67-d82d-4d68-a50c-09eaa83c3aec,,Other Follow up Method Specify(Second Attempt),Specify,Other Follow up Method Specify(Second Attempt),,,,Question,Text,
+c266e888-c32a-11e9-9cb5-2a2ae2dbcce4,,Second Attempt Method,Method,Hei End Of Follow up (Second Attempt Method),,,,Question,Coded,Clinical Assessment;PCR;Other Follow up Method(Second Attempt)
+01cf4c9d-e83b-4e9d-bdf1-005a43b6d8b7,,Follow up Outcome Positive(Second Attempt),Positive,Follow up Outcome Positive(Second Attempt),,,,Misc,N/A,
+62cc3ea3-d8fb-45d9-83d7-431683ba1076,,Follow up Outcome Negative(Second Attempt),Negative,Follow up Outcome Negative(Second Attempt),,,,Misc,N/A,
+8f5828bd-50b9-4d9d-b91e-01c6315b9be9,,Follow up Outcome Others(Second Attempt),Other Outcome,Follow up Outcome Others(Second Attempt),,,,Misc,N/A,
+03433429-2c68-4c46-84e2-31608d4dc020,,Follow up Outcome Others Specify(Second Attempt),Others Specify,Follow up Outcome Others Specify(Second Attempt),,,,Question,Text,
+c266ec84-c32a-11e9-9cb5-2a2ae2dbcce4,,Second  Attempt Outcome,Outcome,Hei End Of Follow up (Second  Attempt Outcome),,,,Question,Coded,Follow up Outcome Positive(Second Attempt) ;Follow up Outcome Negative(Second Attempt);Follow up Outcome Others(Second Attempt)
+7848cb48-3d2a-4e5f-9e5e-784bd8277ad9,,"Outcome,Second Attempt",Second  Attempt Outcome,"Outcome,Second Attempt",,,,Question,Coded,Follow up Outcome Positive(Second Attempt) ;Follow up Outcome Negative(Second Attempt);Follow up Outcome Others(Second Attempt)
+c266edd8-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Second Attempt Details),Second  Attempt,Hei End Of Follow up (Second Attempt Details),,,,Misc,N/A,
+c266ef0e-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Third Attempt Date),Date,Hei End Of Follow up (Third Attempt Date),,,,Question,Date,
+a503ff07-113c-4a0e-9720-17225e8c8814,,Other Follow up Method(Third Attempt),Other,Other Follow up Method(Third Attempt),,,,Misc,N/A,
+b91049cd-98b0-4da6-bfad-256d3cb3610e,,Other Follow up Method Specify(Third Attempt),Others Specify,Other Follow up Method Specify(Third Attempt),,,,Question,Text,
+c266f04e-c32a-11e9-9cb5-2a2ae2dbcce4,,Third Attempt Method,Method,Hei End Of Follow up (Third Attempt Method),,,,Question,Coded,Clinical Assessment;PCR;Other Follow up Method(Third Attempt)
+da3f4559-c6f8-425a-84f6-f5046fc4fea8,,Follow up Outcome Positive(Third Attempt),Positive,Follow up Outcome Positive(Third Attempt),,,,Misc,N/A,
+6e142dba-6104-46bd-830b-139cc4f72ef2,,Follow up Outcome Negative(Third Attempt),Negative,Follow up Outcome Negative(Third Attempt),,,,Misc,N/A,
+3658091c-4439-4d84-a463-7ce86e1cedce,,Follow up Outcome Others(Third Attempt),Other Outcome,Follow up Outcome Others(Third Attempt),,,,Misc,N/A,
+e3a68b4c-d617-45a0-a26f-c25324cff211,,Follow up Outcome Others Specify(Third Attempt),Others Specify,Follow up Outcome Others Specify(Third Attempt),,,,Question,Text,
+c266f17a-c32a-11e9-9cb5-2a2ae2dbcce4,,Third Attempt Outcome,Outcome,Hei End Of Follow up (Third Attempt Outcome),,,,Question,Coded,Follow up Outcome Positive(Third Attempt); Follow up Outcome Negative(Third Attempt) ; Follow up Outcome Others(Third Attempt)
+c266f31e-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Third  Attempt Details),Third  Attempt,Hei End Of Follow up (Third  Attempt Details),,,,Misc,N/A,
+c266f756-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Fourth Attempt Date),Date,Hei End Of Follow up (Fourth Attempt Date),,,,Question,Date,
+938e1918-cb9f-41f4-bdae-8a07f6853d26,,Other Follow up Method(Fourth Attempt),Other,Other Follow up Method(Fourth Attempt),,,,Misc,N/A,
+a33c65d0-57ff-45ec-b224-98bc7643a5d6,,Other Follow up Method Specify(Fourth Attempt),Others Specify,Other Follow up Method Specify(Fourth Attempt),,,,Question,Text,
+c266f8aa-c32a-11e9-9cb5-2a2ae2dbcce4,,Fourth Attempt Method,Method,Hei End Of Follow up (Fourth Attempt Method),,,,Question,Coded,Clinical Assessment;PCR;Other Follow up Method(Fourth Attempt)
+157e0133-ef0f-421e-84dd-14191a4ee317,,Follow up Outcome Positive(Fourth Attempt),Positive,Follow up Outcome Positive(Fourth Attempt),,,,Misc,N/A,
+6054d912-3c60-4567-8154-fdb0633b98d8,,Follow up Outcome Negative(Fourth Attempt),Negative,Follow up Outcome Negative(Fourth Attempt),,,,Misc,N/A,
+a588dae6-b2d0-4921-9feb-8921ce70d7ad,,Follow up Outcome Others(Fourth Attempt),Other Outcome,Follow up Outcome Others(Fourth Attempt),,,,Misc,N/A,
+b670d223-8404-4756-8be0-2e24656b3de4,,Follow up Outcome Others Specify(Fourth Attempt),Others Specify,Follow up Outcome Others Specify(Fourth Attempt),,,,Question,Text,
+c266f9d6-c32a-11e9-9cb5-2a2ae2dbcce4,,Fourth Attempt Outcome,Outcome,Hei End Of Follow up (Fourth Attempt Outcome),,,,Question,Coded,"Follow up Outcome Positive(Fourth Attempt); Follow up Outcome Negative(Fourth Attempt) ;Follow up Outcome Others(Fourth Attempt) "
+c266fb02-c32a-11e9-9cb5-2a2ae2dbcce4,,Hei End Of Follow up (Fourth  Attempt Details),Fourth  Attempt,Hei End Of Follow up (Fourth  Attempt Details),,,,Misc,N/A,
+c266fc2e-c32a-11e9-9cb5-2a2ae2dbcce4,,Discharge Negative,Discharge Negative,Discharge Negative,,,,Misc,N/A,
+c266fd50-c32a-11e9-9cb5-2a2ae2dbcce4,,Died,Died,Died,,,,Misc,N/A,
+c2670070-c32a-11e9-9cb5-2a2ae2dbcce4,,Referred To ART Clinic,Referred To ART Clinic,Referred To ART Clinic,,,,Misc,N/A,
+c26701b0-c32a-11e9-9cb5-2a2ae2dbcce4,,"Final Status(Transferred) ",Transferred,"Final Status(Transferred) ",,,,Misc,N/A,
+c26702dc-c32a-11e9-9cb5-2a2ae2dbcce4,,Final Status,Final Status,Final Status,,,,Question,Coded,Discharge Negative; Lost;Died;Referred To ART Clinic;Final Status(Transferred);Unknown
+6684d236-02d4-4c7e-be4b-a95b5582a847,"",Facility Transferred to,Facility Transferred to,"","","","",Question,Text,""
+c2670412-c32a-11e9-9cb5-2a2ae2dbcce4,,HEI END OF FOLLOW UP FORM,HEI END OF FOLLOW UP FORM,HEI END OF FOLLOW UP FORM,,,,Misc,N/A,

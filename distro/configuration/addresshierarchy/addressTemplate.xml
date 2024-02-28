@@ -1,0 +1,32 @@
+<org.openmrs.layout.address.AddressTemplate>
+    <nameMappings class="properties">
+        <property name="country" value="Country"/>
+        <property name="address1" value="State"/>
+        <property name="address2" value="County"/>
+        <property name="address3" value="Payam"/>
+        <property name="address4" value="Boma"/>
+        <property name="address5" value="Village/Town"/>
+        <property name="address6" value="Landmark"/>
+    </nameMappings>
+    <sizeMappings class="properties">
+        <property name="country" value="40"/>
+        <property name="address1" value="40"/>
+        <property name="address2" value="40"/>
+        <property name="address3" value="40"/>
+        <property name="address4" value="40"/>
+        <property name="address5" value="40"/>
+        <property name="address6" value="40"/>
+    </sizeMappings>
+    <elementDefaults class="properties">
+        <property name="country" value="South Sudan"/>
+    </elementDefaults>
+    <lineByLineFormat>
+        <string>country</string>
+        <string>address1</string>
+        <string>address2</string>
+        <string>address3</string>
+        <string>address4</string>
+        <string>address5</string>
+        <string>address6</string>
+    </lineByLineFormat>
+</org.openmrs.layout.address.AddressTemplate>

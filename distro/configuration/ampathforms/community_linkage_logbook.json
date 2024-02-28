@@ -1,0 +1,92 @@
+{
+	"name": "Community Linkage logbook",
+	"pages": [
+		{
+			"label": "Client Details",
+			"sections": [
+				{
+					"label": "Client details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Category of the client",
+							"type": "obs",
+							"required": false,
+							"id": "clientCategory",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "579c3be1-7012-4956-b25d-77b686b70081",
+								"conceptMappings": [],
+								"answers": [
+									{
+										"concept": "65057ee0-acf4-4536-bf60-a9675fb96d42",
+										"label": "Pregnant or Breastfeeding Woman"
+									},
+									{
+										"concept": "54f0a4fb-477a-4bb2-977d-59b6ec3d4b34",
+										"label": "TX_New"
+									}
+								]
+							},
+							"validators": []
+						},
+						{
+							"label": "Name of CHW",
+							"type": "obs",
+							"required": false,
+							"id": "covAssigned",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "5b258179-1872-4339-8b29-5ecf618bd4d3",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						},
+						{
+							"label": "CHW Phone number",
+							"type": "obs",
+							"required": false,
+							"id": "chwPhone",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "cb3385ee-18c3-4856-a410-c7b4d105a779"
+							},
+							"validators": []
+						},
+						{
+							"label": "CHW Address",
+							"type": "obs",
+							"required": false,
+							"id": "chwAddress",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "77a35b01-7713-437a-a82b-7f74c75ea41d"
+							},
+							"validators": []
+						},
+						{
+							"label": "Date of Linkage",
+							"type": "obs",
+							"required": false,
+							"id": "dateClientMetCov",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "fef6ef98-6d8d-4921-80f2-93255a7a5faf",
+								"conceptMappings": [],
+								"answers": []
+							},
+							"validators": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"encounterType": "81852aee-3f10-11e4-adec-0800271c1b75",
+	"referencedForms": [],
+	"uuid": "48f025b6-13eb-4c28-8bb0-3aa776b89634",
+	"description": "Community linkage logbook",
+	"version": "1.0"
+}

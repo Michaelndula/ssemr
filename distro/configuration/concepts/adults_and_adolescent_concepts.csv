@@ -1,0 +1,20 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:126,Data class,Data type,Answers
+874452af-4d24-483a-a3c0-6c6de76274cc,,CBC,CBC,,,,,Finding,Text,
+150f69fd-140d-4559-85b7-6be94f371167,,Is the Client Pregnant,Is the Client Pregnant,,,,,Finding,Boolean,
+f9e6254d-fd14-4831-9ee0-85099a72b3e8,,Pregnancy Test,Pregnancy Test,,,,,Finding,Text,
+33a340e7-67e7-4bc0-a669-6a5f6a6abe88,,HBsAg,HBsAg,,,,,Finding,Text,
+8218c436-897e-4298-be27-c58016b00e7a,,HCV Antibody,HCV Antibody,,,,,Finding,Text,
+a1dcc066-550c-42a3-90aa-83d8336cb7d5,,POSITIVE,POSITIVE,,,,,Misc,N/A,
+f9c1016a-dead-42c1-8ea3-7a1325f1159c,,NEGATIVE,NEGATIVE,,,,,Misc,N/A,
+5d8d6b9f-1acf-4a4c-a79c-acd0ccd32df8,,Unknown,Unknown,,,,,Misc,N/A,
+151384b6-2f71-45be-b296-2b1fbee700a1,,Sputum AFB (if needed),Sputum AFB (if needed),,,,,Question,Coded,"POSITIVE;
+NEGATIVE;
+Unknown"
+87045f3e-ae61-4e53-8d8f-d14e92f06d0d,,Clinical stage 1,Clinical stage 2,,,,,Misc,N/A,
+e7112b84-4321-41a9-8c04-c96c427dd7b6,,Clinical stage 2,Clinical stage 3,,,,,Misc,N/A,
+4ca4d221-cb9d-4fcb-9c4f-ebc89eb0c7c3,,Clinical stage 3,Clinical stage 4,,,,,Misc,N/A,
+489ff20e-5f04-4ca2-a46c-a86acd29567b,,Clinical stage 4,Clinical stage 5,,,,,Misc,N/A,
+a90652b2-f2c7-471f-a287-64495d2a6791,,WHO clinical stage,WHO clinical stage,,,,,Question,Coded,"Clinical stage 1;
+Clinical stage 2;
+Clinical stage 3;
+Clinical stage 4"

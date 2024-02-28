@@ -1,0 +1,12 @@
+Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:1,_order:143
+0ee6f07d-2fad-472f-a2f8-84c0257f5b70,Enrollement(ART Clinic);Enrollement(Ward);Enrollement(Self Referral);Enrollement(Private Facilities);Other service delivery point,,Entry Point(Enrollement),Question,Coded,,
+d7eac53b-8f23-4797-95f9-69177741dd90,,,Mothers Received ART for PMTCT?,Question,Boolean,,
+e8b8d88b-ad45-4f4b-b809-e61fbd9d4e00,,Entry Point(Enrollement) ; Specify Other Delivery Point ; CTX or Dapose Start Date;Cotrimoxazole initiation Age(Months);Date of ARV Prophylaxis Start;ARV prophylaxis Initiation Age (Months),HEI Enrollment Information,Misc,N/A,,
+265fc6c7-4708-48d9-bdbb-55a25dcb2c97,Hospital;Home;PHCC;PHCU; Private Health Facility,,Place of Delivery,Question,Coded,,
+2ad541e3-3bfd-4bec-832c-31a34034a564,"Caesarean Section ; Delivery Mode, Normal",,Mode Of Delivery,Question,Coded,,
+84bef6d4-5701-4343-b3e3-96bd06e2de80,<= 4 weeks;> 4 weeks;N/A,,Duration on ART?,Question,Coded,,
+22d0740d-c9bd-4adf-b824-5aece5a42f38,1=TDF/3TC/EFV ; 2=AZT/3TC/NVP ;3=AZT/3TC/3TC+EFV; 4=TDF/3TC+NVP;5=TDF/3TC/DTG;Other ART Regimen,,Mother's ART Regimen,Question,Coded,,
+d14236e5-2c6a-4dfe-b124-044708910d44,<1000 copies/ml ;>1000 copies/ml ;Not done,,Mothers Viral load At Delivery?,Question,Coded,,
+bf28a3b2-8fab-4367-aac1-ed3d15f73557,Daily NVP;AZT+NVP,,Infant's PMTCT ARVS,Question,Coded,,
+a6216423-69ca-4f07-aedf-cc6f3807d07c,,Place of Delivery; Mode Of Delivery ;Duration on ART? ; Mother's ART Regimen ;Specify other Mother's ART Regimen; Mothers Viral load At Delivery?; Infant's PMTCT ARVS; Daily NVP Date ; AZT+NVP Date,Mother's History,Misc,N/A,,
+54a93292-ffe6-43bd-898d-b8946bff488e,,HEI Enrollment Information ; Mother's History,HEI Enrollment Form,Misc,N/A,,

@@ -1,0 +1,10 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:3,_order:126,Data class,Data type,Answers
+32d995db-14d2-4f80-a25c-a8822cbc60db,,Primary Education,Primary Education,,,,,Misc,N/A,
+118ad39e-85ad-4509-bad2-b88ed67fa22a,,Secondary Education,Secondary Education,,,,,Misc,N/A,
+685a7288-9863-44ed-8d35-6378dbb2bd25,,Tertiary Institution,Tertiary Institution,,,,,Misc,N/A,
+0ec46fe5-7195-4c00-a205-d8cf709036d1,,University,University,,,,,Misc,N/A,
+d426049e-8982-4bd6-b4d5-0ec54dc3b641,,Education Level Literate,Education Level Literate,,,,,Question,Coded,"Primary Education;
+Secondary Education;
+Tertiary Institution;
+University"
+73779d67-7e8f-46fe-b723-8879838da5f8,,ART Start Date (Date of Enrolment),ART Start Date (Date of Enrolment),,,,,Question,Date,

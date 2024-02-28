@@ -1,0 +1,491 @@
+<config>
+  <globalProperties>
+  <globalProperty>
+      <property>emrapi.sqlSearch.activeHeiPatients</property>
+      <value>select distinct concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,pi.identifier as identifier,concat("",p.uuid) as uuid,concat("",v.uuid) as activeVisitUuid,IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted 
+	  from visit v join person_name pn on v.patient_id = pn.person_id and pn.voided = 0 join patient_identifier pi on v.patient_id = pi.patient_id join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id 
+	  join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid join person p on p.person_id = v.patient_id left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = 
+	  (select visit_attribute_type_id from visit_attribute_type where name="Admission Status") and va.voided = 0 where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'HEI' ) and v.voided = 0 </value>
+    </globalProperty>
+    <globalProperty>
+      <property>emrapi.sqlSearch.heiToArtPatientQueue</property>
+      <value>select name , identifier ,uuid ,hasBeenAdmitted from (
+select distinct(pid) , identifier, name , uuid ,activeVisitUuid, hasBeenAdmitted   from (
+select t1.person_id as 'pid' , t1.concept_id , t1.value_coded  as 'firstpcr',t1.date_created from obs t1
+left join person_attribute pa on t1.person_id = pa.person_id
+where t1.date_created = 
+(select MAX(t2.date_created) from obs t2 where t2.person_id = t1.person_id and t2.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (First PCR Results)' and concept_name_type = 'fully_specified')) and t1.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (First PCR Results)' and concept_name_type = 'fully_specified') and t1.value_coded = 
+(select concept_id from concept_name where name = 'HEI Results Positive' and concept_name_type = 'FULLY_SPECIFIED') and pa.person_attribute_type_id = 
+(select person_attribute_type_id from person_attribute_type where name = 'TypeofPatient') and pa.value in ( 
+(select concept_id from concept_name where name = 'HeiRelationship' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) , 
+(select concept_id from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0)) and pa.voided = 0
+union all
+select t1.person_id as 'pid' , t1.concept_id , t1.value_coded  as 'firstpcr',t1.date_created from obs t1
+left join person_attribute pa on t1.person_id = pa.person_id
+where t1.date_created = 
+(select MAX(t2.date_created) from obs t2 where t2.person_id = t1.person_id and t2.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Rapid Test At 9 Months Results)' and concept_name_type = 'fully_specified')) and t1.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Rapid Test At 9 Months Results)' and concept_name_type = 'fully_specified') and t1.value_coded = 
+(select concept_id from concept_name where name = 'HEI Results Positive' and concept_name_type = 'FULLY_SPECIFIED') and pa.person_attribute_type_id = 
+(select person_attribute_type_id from person_attribute_type where name = 'TypeofPatient') and pa.value in ( 
+(select concept_id from concept_name where name = 'HeiRelationship' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) , 
+(select concept_id from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0)) and pa.voided = 0
+union all
+select t1.person_id as 'pid' , t1.concept_id , t1.value_coded  as 'firstpcr',t1.date_created from obs t1
+left join person_attribute pa on t1.person_id = pa.person_id
+where t1.date_created = 
+(select MAX(t2.date_created) from obs t2 where t2.person_id = t1.person_id and t2.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Second PCR Results)' and concept_name_type = 'fully_specified')) and t1.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Second PCR Results)' and concept_name_type = 'fully_specified') and t1.value_coded = 
+(select concept_id from concept_name where name = 'HEI Results Positive' and concept_name_type = 'FULLY_SPECIFIED') and pa.person_attribute_type_id = 
+(select person_attribute_type_id from person_attribute_type where name = 'TypeofPatient') and pa.value in ( 
+(select concept_id from concept_name where name = 'HeiRelationship' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) , 
+(select concept_id from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0)) and pa.voided = 0
+union all
+select t1.person_id as 'pid' , t1.concept_id , t1.value_coded  as 'firstpcr',t1.date_created from obs t1
+left join person_attribute pa on t1.person_id = pa.person_id
+where t1.date_created = 
+(select MAX(t2.date_created) from obs t2 where t2.person_id = t1.person_id and t2.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Repeat PCR Results)' and concept_name_type = 'fully_specified')) and t1.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (Repeat PCR Results)' and concept_name_type = 'fully_specified') and t1.value_coded = 
+(select concept_id from concept_name where name = 'HEI Results Positive' and concept_name_type = 'FULLY_SPECIFIED') and pa.person_attribute_type_id = 
+(select person_attribute_type_id from person_attribute_type where name = 'TypeofPatient') and pa.value in ( 
+(select concept_id from concept_name where name = 'HeiRelationship' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) , 
+(select concept_id from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0)) and pa.voided = 0
+union all
+
+select t1.person_id as 'pid' , t1.concept_id , t1.value_coded  as 'firstpcr',t1.date_created from obs t1
+left join person_attribute pa on t1.person_id = pa.person_id
+where t1.date_created = 
+(select MAX(t2.date_created) from obs t2 where t2.person_id = t1.person_id and t2.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (18Months Rapid Test  Results)' and concept_name_type = 'fully_specified')) and t1.concept_id = 
+(select concept_id from concept_name where name = 'HEI Testing (18Months Rapid Test  Results)' and concept_name_type = 'fully_specified') and t1.value_coded = 
+(select concept_id from concept_name where name = 'HEI Results Positive' and concept_name_type = 'FULLY_SPECIFIED') and pa.person_attribute_type_id = 
+(select person_attribute_type_id from person_attribute_type where name = 'TypeofPatient') and pa.value in ( 
+(select concept_id from concept_name where name = 'HeiRelationship' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) , 
+(select concept_id from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0)) and pa.voided = 0
+) tHeitoArt
+inner join (
+select distinct concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name, p.person_id as 'pids',
+pi.identifier as identifier, 
+concat("",p.uuid) as uuid,concat("",v.uuid) as activeVisitUuid,
+IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted 
+from visit v 
+join person_name pn on v.patient_id = pn.person_id and pn.voided = 0 
+join patient_identifier pi on v.patient_id = pi.patient_id 
+join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id 
+join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+join person p on p.person_id = v.patient_id 
+left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = 
+(select visit_attribute_type_id from visit_attribute_type 
+where name="Admission Status") 
+and va.voided = 0 
+where v.date_stopped is null 
+) tDemographics on tHeitoArt.pid = tDemographics.pids
+)tHeiToArtPatients</value>
+    </globalProperty>
+    <globalProperty>
+      <property>bahmni.sqlGet.registrationPatientAppointmentSeach</property>
+      <value>SELECT DISTINCT 
+     pa.patient_id AS 'patientId',
+     pa.start_date_time AS 'appointmentDate', 
+     pa.status AS 'appointmentStatus', pa.appointment_kind FROM patient_appointment pa 
+     LEFT JOIN person p ON p.person_id = pa.patient_id AND p.voided IS FALSE AND pa.voided IS FALSE 
+     LEFT JOIN patient_appointment maxPA ON pa.patient_appointment_id = (SELECT MAX(maxPA.patient_appointment_id) AND maxPA.patient_id = p.person_id) 
+     WHERE pa.appointment_kind = 'Scheduled' AND p.uuid = ${patientUuid}</value>
+    </globalProperty>
+     <globalProperty>
+      <property>emrapi.sqlSearch.registrationPatientsSeachOnVisitDate</property>
+      <value>SELECT distinct pai.identifier, pv.uuid, v.uuid AS "visitUuid",
+    pnA.given_name as givenName, pnA.middle_name as middleName, pnA.family_name as familyName,
+    pv.gender, pv.birthdate as birthDate, pt.date_created as dateCreated,
+    TIMESTAMPDIFF(YEAR, pv.birthdate, CURDATE()) AS age,
+    v.date_started AS visitDate,
+    pattr.value as 'UniqueArtNo', cn1.name as 'MaritalStatus',
+    pa.start_date_time AS 'appointmentDate', pa.status AS 'appointmentStatus' 
+FROM visit v 
+    LEFT JOIN location l on (l.uuid=${visit_location_uuid} and l.location_id = v.location_id) 
+    LEFT JOIN patient_identifier pai on pai.patient_id = v.patient_id and pai.preferred = 1 
+    LEFT JOIN patient pt on pai.patient_id = pt.patient_id 
+    LEFT JOIN person pv on pv.person_id = pai.patient_id 
+    LEFT JOIN person_name pnA on pnA.person_id = pv.person_id 
+    LEFT JOIN person_attribute_type pattrt on pattrt.name = 'UniqueArtNo' and pattrt.retired = 0
+    LEFT JOIN person_attribute pattr on pattr.person_attribute_type_id = pattrt.person_attribute_type_id and pattr.person_id = pv.person_id 
+    LEFT JOIN person_attribute_type pattrtM on pattrtM.name = 'MaritalStatus' and pattrtM.retired = 0
+    LEFT JOIN person_attribute pattrM on pattrM.person_attribute_type_id = pattrtM.person_attribute_type_id and pattrM.person_id = pv.person_id 
+    LEFT JOIN concept_name cn1 ON (cn1.concept_name_type = "FULLY_SPECIFIED" AND cn1.voided is false AND cn1.concept_id = pattrM.value)
+    LEFT JOIN patient_appointment pa ON (pv.person_id = pa.patient_id AND pv.voided IS FALSE AND pa.voided IS FALSE AND pa.appointment_kind = 'Scheduled') 
+    LEFT JOIN patient_appointment maxPA ON (pa.patient_appointment_id = (SELECT MAX(maxPA.patient_appointment_id) AND maxPA.patient_id = pa.patient_id)) 
+where str_to_date(v.date_started, '%Y-%m-%d') = str_to_date(${patient_visit_start_date}, '%Y-%m-%d') 
+group by pai.identifier</value>
+    </globalProperty>
+	<globalProperty>
+	 <property>emrapi.sqlSearch.activePMTCTPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'PMTCT' ) and v.voided = 0    
+	   </value>
+    </globalProperty>
+	<globalProperty>
+	<property>emrapi.sqlSearch.activeLabVisitsPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'LAB VISIT' ) and v.voided = 0    
+	   </value>
+    </globalProperty>
+	<globalProperty>
+	<property>emrapi.sqlSearch.activeViralloadPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'VIRAL LOAD') and v.voided = 0    
+	   </value>
+    </globalProperty>
+	<globalProperty>
+	<property>emrapi.sqlSearch.activeViralloadPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'VIRAL LOAD') and v.voided = 0    
+	   </value>
+    </globalProperty>
+    <globalProperty>
+	<property>bahmni.sqlGet.upComingAppointments</property>
+      <value>SELECT
+  app_service.name                                                                                AS `DASHBOARD_APPOINTMENTS_SERVICE_KEY`,
+ (select name from location where location_id = pa.location_id)                                   AS `DASHBOARD_APPOINTMENTS_SERVICE_TYPE_KEY`,
+  DATE_FORMAT(start_date_time, "%d/%m/%Y")                                                        AS `DASHBOARD_APPOINTMENTS_DATE_KEY`,
+  CONCAT(DATE_FORMAT(start_date_time, "%l:%i %p"), " - ", DATE_FORMAT(end_date_time, "%l:%i %p")) AS `DASHBOARD_APPOINTMENTS_SLOT_KEY`,
+  CONCAT(pn.given_name, ' ', ifnull(pn.family_name,''))                                                      AS `DASHBOARD_APPOINTMENTS_PROVIDER_KEY`,
+  pa.status                                                                                       AS `DASHBOARD_APPOINTMENTS_STATUS_KEY`
+FROM
+  patient_appointment pa
+  JOIN person p ON p.person_id = pa.patient_id AND pa.voided IS FALSE
+  JOIN appointment_service app_service
+    ON app_service.appointment_service_id = pa.appointment_service_id AND app_service.voided IS FALSE
+  LEFT JOIN provider prov ON prov.provider_id = pa.provider_id AND prov.retired IS FALSE
+  LEFT JOIN person_name pn ON pn.person_id = prov.person_id AND pn.voided IS FALSE
+  LEFT JOIN appointment_service_type app_service_type
+    ON app_service_type.appointment_service_type_id = pa.appointment_service_type_id
+WHERE p.uuid = ${patientUuid} AND
+      start_date_time >= CURDATE() AND
+      (app_service_type.voided IS FALSE OR app_service_type.voided IS NULL)
+ORDER BY start_date_time ASC;  
+	   </value>
+    </globalProperty>
+	<globalProperty>
+	<property>emrapi.sqlSearch.activeConsultationPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'CONSULTATION') and v.voided = 0    
+	   </value>
+    </globalProperty>
+    	<globalProperty>
+	<property>bahmni.sqlGet.patientContacts</property>
+      <value>select  Names as 'Contact Name' , ( case when Sexual_Partner = 'YES' then 'Sexual Partner' else 'Family Member' end) as 'Contact Type' , PhoneNumber as 'Contact Phone Number' , wasContacted as 'Contacted ?' , wasContactTested as 'Tested ?' , 
+(case when wasContactTested = 'YES' THEN Results  else 'N/A' end ) as 'Results' from (
+select person_id as 'pid' , value as 'newpatientid' from person_attribute where person_attribute_type_id = (SELECT person_attribute_type_id FROM openmrs.person_attribute_type where name = 'TypeofPatient'
+)and value =(select concept_id  from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) and voided = 0
+)tNewPatient
+inner join (
+select pa.person_id,p.uuid, pa.value as 'artnumber' , concat(coalesce(given_name, ''), "  ", coalesce(middle_name, ''), ' ', coalesce(family_name , '') ) as 'ClientName', 
+gender as sex ,floor(datediff(curdate(),p.birthdate) / 365) as 'Age'
+from person_attribute as pa 
+INNER JOIN person_attribute_type as pat on pa.person_attribute_type_id = pat.person_attribute_type_id  
+INNER JOIN person as p on pa.person_id = p.person_id 
+LEFT JOIN person_name as pn on p.person_id = pn.person_id 
+LEFT JOIN patient as pt on p.person_id = pt.patient_id
+where pa.person_attribute_type_id = (select person_attribute_type_id from person_attribute_type where name = 'UniqueArtNo')
+)tDemographics on tNewPatient.pid = tDemographics.person_id
+inner join (
+select pat_id , 
+(case when sexual_partner = 'YES' then sexual_partner_names else family_member_names end) as 'Names',
+sexual_partner as 'Sexual_Partner',
+(case when sexual_partner = 'YES' then sexual_partner_phone_number else family_member_phonenumber end) as 'PhoneNumber', 
+(case when sexual_partner = 'YES' then sexualPartnerContacted else familyMemberContacted end) as 'wasContacted',
+(case when sexual_partner = 'YES' then sexualPartnerTested else familyMemberTested end) as 'wasContactTested',
+sexualPartnerHivResult , familyMemberHivResult ,
+ (case when sexual_partner = 'YES' then sexualPartnerHivResult else familyMemberHivResult end) as 'Results'
+from (
+select person_id as pat_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = '1' then 'YES' else 'No' end) as 'sexual_partner'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner?' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0
+)tSexualRelationship
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'sexual_partner_names'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual partner names' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerNames on tSexualRelationship.obs_group_id = tSexualPartnerNames.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'family_member_names'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Family Member names' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberNames on tSexualRelationship.obs_group_id = tFamilyMemberNames.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'family_member_phonenumber'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Family Member,Phone Number' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberMobile on tSexualRelationship.obs_group_id = tFamilyMemberMobile.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'sexual_partner_phone_number'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner, Phone Number' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerPhoneNumber on tSexualRelationship.obs_group_id = tSexualPartnerPhoneNumber.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'sexualPartnerContacted'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Sexual Partner Contacted?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerContacted on tSexualRelationship.obs_group_id = tSexualPartnerContacted.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'familyMemberContacted'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Family Member Contact Contacted?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tFamilyMemberContacted on tSexualRelationship.obs_group_id = tFamilyMemberContacted.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'sexualPartnerTested'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Sexual Partner Tested?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerTested on tSexualRelationship.obs_group_id = tSexualPartnerTested.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_coded , (select name from concept_name where concept_id = value_coded and concept_name_type = 'FULLY_SPECIFIED') as 'sexualPartnerHivResult' 
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner - HIV Result' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tSexualPartnerHivResult on tSexualRelationship.obs_group_id = tSexualPartnerHivResult.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_coded , (select name from concept_name where concept_id = value_coded and concept_name_type = 'FULLY_SPECIFIED') as 'familyMemberHivResult' 
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Result' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberHIVResult on tSexualRelationship.obs_group_id = tFamilyMemberHIVResult.obs_group_id
+left join ( 
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'familyMemberTested'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Family Member Contact Tested?' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberTested on tSexualRelationship.obs_group_id = tFamilyMemberTested.obs_group_id
+)tContacts on tDemographics.person_id = tContacts.pat_id where uuid = ${patientUuid}   
+	   </value>
+    </globalProperty>
+    	<globalProperty>
+	<property>bahmni.sqlGet.getContactsElicited</property>
+      <value> 
+select  count(distinct(Names)) as 'Number of Contacts Elicited',
+count(distinct(case when wasContactTested = 'YES' then Names end)) as 'Number Of Contacts Tested'
+from (
+select person_id as 'pid' , value as 'newpatientid' from person_attribute where person_attribute_type_id = (SELECT person_attribute_type_id FROM openmrs.person_attribute_type where name = 'TypeofPatient'
+)and value =(select concept_id  from concept_name where name = 'NewPatient' and concept_name_type = 'FULLY_SPECIFIED' and voided = 0) and voided = 0
+)tNewPatient
+inner join (
+select pa.person_id,p.uuid, pa.value as 'artnumber' , concat(coalesce(given_name, ''), "  ", coalesce(middle_name, ''), ' ', coalesce(family_name , '') ) as 'ClientName', 
+gender as sex ,floor(datediff(curdate(),p.birthdate) / 365) as 'Age'
+from person_attribute as pa 
+INNER JOIN person_attribute_type as pat on pa.person_attribute_type_id = pat.person_attribute_type_id  
+INNER JOIN person as p on pa.person_id = p.person_id 
+LEFT JOIN person_name as pn on p.person_id = pn.person_id 
+LEFT JOIN patient as pt on p.person_id = pt.patient_id
+where pa.person_attribute_type_id = (select person_attribute_type_id from person_attribute_type where name = 'UniqueArtNo')
+)tDemographics on tNewPatient.pid = tDemographics.person_id
+inner join (
+select pat_id , 
+(case when sexual_partner = 'YES' then sexual_partner_names else family_member_names end) as 'Names',
+sexual_partner as 'Sexual_Partner',
+(case when sexual_partner = 'YES' then sexual_partner_phone_number else family_member_phonenumber end) as 'PhoneNumber', 
+(case when sexual_partner = 'YES' then sexualPartnerContacted else familyMemberContacted end) as 'wasContacted',
+(case when sexual_partner = 'YES' then sexualPartnerTested else familyMemberTested end) as 'wasContactTested',
+sexualPartnerHivResult , familyMemberHivResult ,
+ (case when sexual_partner = 'YES' then sexualPartnerHivResult else familyMemberHivResult end) as 'Results'
+from (
+select person_id as pat_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = '1' then 'YES' else 'No' end) as 'sexual_partner'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner?' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0
+)tSexualRelationship
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'sexual_partner_names'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual partner names' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerNames on tSexualRelationship.obs_group_id = tSexualPartnerNames.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'family_member_names'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Family Member names' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberNames on tSexualRelationship.obs_group_id = tFamilyMemberNames.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'family_member_phonenumber'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Family Member,Phone Number' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberMobile on tSexualRelationship.obs_group_id = tFamilyMemberMobile.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_text as 'sexual_partner_phone_number'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner, Phone Number' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerPhoneNumber on tSexualRelationship.obs_group_id = tSexualPartnerPhoneNumber.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'sexualPartnerContacted'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Sexual Partner Contacted?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerContacted on tSexualRelationship.obs_group_id = tSexualPartnerContacted.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'familyMemberContacted'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Family Member Contact Contacted?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tFamilyMemberContacted on tSexualRelationship.obs_group_id = tFamilyMemberContacted.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'sexualPartnerTested'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Sexual Partner Tested?' and concept_name_type = 'FULLY_SPECIFIED')
+ and voided = 0 
+)tSexualPartnerTested on tSexualRelationship.obs_group_id = tSexualPartnerTested.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_coded , (select name from concept_name where concept_id = value_coded and concept_name_type = 'FULLY_SPECIFIED') as 'sexualPartnerHivResult' 
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Sexual Partner - HIV Result' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tSexualPartnerHivResult on tSexualRelationship.obs_group_id = tSexualPartnerHivResult.obs_group_id
+left join (
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+value_coded , (select name from concept_name where concept_id = value_coded and concept_name_type = 'FULLY_SPECIFIED') as 'familyMemberHivResult' 
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Result' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberHIVResult on tSexualRelationship.obs_group_id = tFamilyMemberHIVResult.obs_group_id
+left join ( 
+select person_id , encounter_id , obs_datetime , obs_group_id ,
+(case when value_coded = 1 then 'YES' else 'NO' end ) as 'familyMemberTested'
+from obs o 
+where concept_id = (select concept_id from concept_name where name = 'Was Family Member Contact Tested?' and concept_name_type = 'FULLY_SPECIFIED')
+and voided = 0 
+)tFamilyMemberTested on tSexualRelationship.obs_group_id = tFamilyMemberTested.obs_group_id
+)tContacts on tDemographics.person_id = tContacts.pat_id where uuid = ${patientUuid} 
+</value>
+</globalProperty>
+	<globalProperty>
+	<property>emrapi.sqlSearch.activeDrugPatients</property>
+      <value>select distinct
+          concat(pn.given_name,' ', ifnull(pn.family_name,'')) as name,
+          pi.identifier as identifier,
+          concat("",p.uuid) as uuid,
+          concat("",v.uuid) as activeVisitUuid,
+          IF(va.value_reference = "Admitted", "true", "false") as hasBeenAdmitted
+        from visit v
+        join person_name pn on v.patient_id = pn.person_id and pn.voided = 0
+        join patient_identifier pi on v.patient_id = pi.patient_id
+        join patient_identifier_type pit on pi.identifier_type = pit.patient_identifier_type_id
+        join global_property gp on gp.property="bahmni.primaryIdentifierType" and gp.property_value=pit.uuid
+        join person p on p.person_id = v.patient_id
+        left outer join visit_attribute va on va.visit_id = v.visit_id and va.attribute_type_id = (
+          select visit_attribute_type_id from visit_attribute_type where name="Admission Status"
+        ) and va.voided = 0
+        where v.date_stopped is null AND v.visit_type_id = (select visit_type_id from visit_type where name = 'DRUGS') and v.voided = 0    
+	   </value>
+    </globalProperty>
+	<globalProperty>
+	<property>SchedulerMarksComplete</property>
+      <value>true</value>
+    </globalProperty>
+	<globalProperty>
+	<property>SchedulerMarksMissed</property>
+      <value>true</value>
+    </globalProperty>
+  </globalProperties>
+</config>

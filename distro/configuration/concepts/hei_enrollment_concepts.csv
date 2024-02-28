@@ -1,0 +1,37 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:2,_order:142,Data class,Data type,Answers
+52b3f334-0978-4671-ad19-88bf9b8ec065,,Enrollement(ART Clinic),ART Clinic,Enrollement(Clinic),,,,Misc,N/A,
+19a1709b-46da-46d5-ad12-f5e0841f7c19,,Enrollement(Ward),Ward,Enrollement(Ward),,,,Misc,N/A,
+22a6475b-d60c-4158-9605-742684474b8b,,Enrollement(Self Referral),Self Referral,Enrollement(Self Referral),,,,Misc,N/A,
+0cc49cee-fff7-47b6-b415-7524c4d35e0a,,Enrollement(Private Facilities),Private Facilities,Enrollement(Private Facilities),,,,Misc,N/A,
+1059d497-0fc0-4d38-a774-e4344fc3dd8b,,Other service delivery point,Other service delivery point,Other service delivery point,,,,Misc,N/A,
+e2748928-9ef1-4199-bb1d-f627d1d90e6f,,Specify Other Delivery Point,Specify Other Delivery Point,Specify Other Delivery Point,,,,Question,Text,
+0ee6f07d-2fad-472f-a2f8-84c0257f5b70,,Entry Point(Enrollement),Entry Point,Entry Point(Enrollement),,,,Question,Coded,Enrollement(ART Clinic);Enrollement(Ward);Enrollement(Self Referral);Enrollement(Private Facilities);Other service delivery point
+e00e75f0-2d9e-493b-b2da-167d41fe5b95,,Date of ARV Prophylaxis Start,Date of ARV Prophylaxis Start,Date of ARV Prophylaxis Start,,,,Question,Date,
+6b7ceb0a-2ac6-4c37-9d8f-8d38268eb432,,Age at ARV prophylaxis Initiation (Months),Age at ARV prophylaxis Initiation (Months),Age at ARV prophylaxis Initiation (Months),,,,Question,Date,
+e13c07bc-0528-427a-9210-8afbd375afcf,,ARV prophylaxis Initiation Age (Months),ARV prophylaxis Initiation Age (Months),ARV prophylaxis Initiation Age (Months),,,,Question,Numeric,
+a1a7ff27-ba14-48f5-9fb5-f9a8de8e1d27,,Cotrimoxazole initiation Age(Months),Cotrimoxazole initiation Age(Months),Cotrimoxazole initiation Age(Months),,,,Question,Numeric,
+d7eac53b-8f23-4797-95f9-69177741dd90,,Mothers Received ART for PMTCT?,Mothers Received ART for PMTCT?,Mothers Received ART for PMTCT?,,,,Question,Boolean,
+f5026b7b-c8fe-42d4-adca-c365a13e95a3,,<= 4 weeks,<= 4 weeks,<= 4 weeks,,,,Misc,N/A,
+f9fa4e76-c9f6-44b5-ba63-bd23fe1f12ff,,> 4 weeks,> 4 weeks,> 4 weeks,,,,Misc,N/A,
+946febb7-94d0-4fe5-9555-fc483a1e0d7c,,N/A,N/A,N/A,,,,Misc,N/A,
+84bef6d4-5701-4343-b3e3-96bd06e2de80,,Duration on ART?,Duration on ART?,Duration on ART?,,,,Question,Coded,<= 4 weeks;> 4 weeks;N/A
+67caf7f2-472a-4c21-909a-4368290aa1a2,,1=TDF/3TC/EFV,1=TDF/3TC/EFV,1=TDF/3TC/EFV,,,,Misc,N/A,
+a6430322-829e-4e58-9944-3bde0697826a,,2=AZT/3TC/NVP,2=AZT/3TC/NVP,2=AZT/3TC/NVP,,,,Misc,N/A,
+8dfc8d14-babe-4d73-8528-9d9d74603685,,3=AZT/3TC/3TC+EFV,3=AZT/3TC/3TC+EFV,3=AZT/3TC/3TC+EFV,,,,Misc,N/A,
+8bb9e340-a3d3-4e18-ae06-d54800fba8f2,,4=TDF/3TC+NVP,4=TDF/3TC+NVP,4=TDF/3TC+NVP,,,,Misc,N/A,
+eb4ffa32-7c66-4ff0-8796-134cf5045391,,5=TDF/3TC/DTG,5=TDF/3TC/DTG,5=TDF/3TC/DTG,,,,Misc,N/A,
+d75c973c-06d4-43d2-a57d-6340fc8c0100,,Other ART Regimen,Other(specify),Other ART Regimen,,,,Misc,N/A,
+22d0740d-c9bd-4adf-b824-5aece5a42f38,,Mother's ART Regimen,Mother's ART Regimen,Mother's ART Regimen,,,,Question,Coded,1=TDF/3TC/EFV ; 2=AZT/3TC/NVP ;3=AZT/3TC/3TC+EFV; 4=TDF/3TC+NVP;5=TDF/3TC/DTG;Other ART Regimen
+c9109a3b-590f-40c0-90d5-123235915de1,,Specify other Mother's ART Regimen,Other Regimen (specify),Specify other Mother's ART Regimen,,,,Question,Text,
+5e5638d0-5df1-4843-ba73-8637d65cc34e,,<1000 copies/ml,<1000 copies/ml,<1000 copies/ml,,,,Misc,N/A,
+64a2380b-b16f-4c3d-883f-04f9172a2e8b,,>1000 copies/ml,>1000 copies/ml,>1000 copies/ml,,,,Misc,N/A,
+40e22877-fff1-4e2e-b441-218021481636,,Not done,Not done,Not done,,,,Misc,N/A,
+d14236e5-2c6a-4dfe-b124-044708910d44,,Mothers Viral load At Delivery?,Mothers Viral load At Delivery?,Mothers Viral load At Delivery?,,,,Question,Coded,<1000 copies/ml ;>1000 copies/ml ;Not done
+34bf7ed1-4e7e-4b7d-af9c-712973450bf5,,Daily NVP,Daily NVP,Daily NVP,,,,Misc,N/A,
+f2744208-2187-11ea-978f-2e728ce88125,,AZT+NVP,AZT+NVP,AZT+NVP,,,,Misc,N/A,
+aea8d9a7-6756-42e2-bb25-4a84ec97261b,,Daily NVP Date,NVP Date,Daily NVP Date,,,,Question,Date,
+817c6b34-9984-4a26-9ba0-fc74a5041e22,,AZT+NVP Date,AZT+NVP Date,AZT+NVP Date,,,,Question,Date,
+bf28a3b2-8fab-4367-aac1-ed3d15f73557,,Infant's PMTCT ARVS,Infant's PMTCT ARVS,Infant's PMTCT ARVS,,,,Question,Coded,Daily NVP;AZT+NVP
+a6216423-69ca-4f07-aedf-cc6f3807d07c,,Mother's History,Mother's History,Mother's History,,,,Misc,N/A,
+e8b8d88b-ad45-4f4b-b809-e61fbd9d4e00,,HEI Enrollment Information,HEI Enrollment Information,HEI Enrollment Information,,,,Misc,N/A,
+54a93292-ffe6-43bd-898d-b8946bff488e,,HEI Enrollment Form,HEI Enrollment Form,HEI Enrollment Form,,,,Misc,N/A,

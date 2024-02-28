@@ -1,0 +1,5 @@
+Uuid,Void/Retire,Name,Description,View privilege,Edit privilege,_order:1000
+3c2ded2c-6856-11ee-8c99-0242ac120002,,TB Screening,Encounter for Tb screening form,,,,
+3c2df02e-6856-11ee-8c99-0242ac120002,,Community Linkage,Encounter for  community linkage logbook,,,,
+913a8900-6857-11ee-8c99-0242ac120002,, VL Lab Request,Encounter for capturing vl lab request,,,
+f7f1c854-69e5-11ee-8c99-0242ac120002,, High Viral Load,Encounter for capturing high vl,,,

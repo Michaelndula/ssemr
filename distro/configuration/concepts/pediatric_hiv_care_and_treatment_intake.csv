@@ -1,0 +1,122 @@
+Uuid,Void/Retire,Fully specified name:en,Short name:en,Description:en,...,_version:1,_order:120,Data class,Data type,Answers
+29e0c25a-02c8-4ee8-aa43-8296e9b341d4,,reactive,reactive,reactive,,,,Misc,N/A,
+29e0c25a-02c8-4ee8-aa43-8296e9b341d4,,Nonreactive,Nonreactive,Nonreactive,,,,Misc,N/A,
+3b75cc72-924b-4d36-8891-95484287495e,,unknown,unknown,unknown,,,,Misc,N/A,
+5eedf493-6d2c-4c0d-8ea6-d43b539b39da,,Maternal HIV Status,Maternal HIV Status,Maternal HIV Status,,,,Misc,Coded,"Reactive, Nonreactive, unknown"
+544e8688-7ab4-4604-9523-fb166fc7838e,,laboratory findings CBC,laboratory findings CBC,laboratory findings CBC,,,,Misc,N/A,
+ddcd2df8-9c6b-4b00-8822-0609de34ee54,,Systemic findings,Systemic findings,Systemic findings,,,,Misc,N/A,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+e1dff29e-6ce5-45c9-a464-ea38548291f8,,Head - Organ system,Head - Organ system,Head - Organ system,,,,Misc,Coded,"Normal, Abnormal"
+a1d22675-5dad-4d72-bea7-77e4f23ea3c2,,Thin sparse hair,Thin sparse hair,Thin sparse hair,,,,Misc,N/A,
+02b1784b-75bf-4cd1-ab72-5e25382a2b33,,White scaly scalp lesion,White scaly scalp lesion,White scaly scalp lesion,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+f2f9751a-0b47-412e-9766-1c2c9731088c,,Head- Organ system If abnormal tick and /or  describe additional findings,,,,,,Misc,Coded,"Thin sparse hair, White scaly scalp lesion, Abnormal Other"
+b6dabbb4-90d8-41c4-93d9-832ce5801a73,,Abnormal findings head Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+729a2e47-dcd7-4d6c-9f34-1ecf6c983d33,,Ears -Organ system,,,,,,Misc,Coded,"Normal, Abnormal"
+11d82ec3-055a-455f-858f-f12866464422,,Ear Discharge(L/R),Ear Discharge(L/R),Ear Discharge(L/R),,,,Misc,N/A,
+cda45ab5-2a42-4a08-b4df-52ea9e2914ee,,Tympanic membrane bulge/redness (L/R),Tympanic membrane bulge/redness (L/R),Tympanic membrane bulge/redness (L/R),,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+c9b51e4d-3c12-4593-a442-622bad9f0582,,Ears - If abnormal tick and /or describe additional findings,,,,,,Misc,Coder,"Ear Discharge(L/R), Tympanic membrane bulge/redness (L/R), Abnormal Other"
+b83e6861-1926-4573-9d36-2851ff807284,,Abnormal findings ears Other specify,Abnormal findings ears Other specify,Abnormal findings ears Other specify,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+730bcb56-24b7-44b0-ac9a-1476ff35d3dc,,Eyes -Organ system,Eyes -Organ system,Eyes -Organ system,,,,Misc,Coded,"Normal, Abnormal"
+06438d7c-6a3d-4a2b-92a3-8fb3aa91b31e,,Yellow sclera,Yellow sclera,Yellow sclera,,,,Misc,N/A,
+624b68f2-9400-473f-8e63-36e9125e89a5,,purulent discharge,purulent discharge,purulent discharge,,,,Misc,N/A,
+5b06ecdd-44da-456c-b46e-590de978030c,,pale conjunctivae,pale conjunctivae,pale conjunctivae,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+8a008ed0-9645-4862-9ce7-bca4c0936365,,Eyes - If abnormal tick and /or describe additional findings,,,,,,Misc,Coder,"Yellow sclera, purulent discharge,  pale conjunctivae, Abnormal Other"
+d36065d5-11cd-4479-b7a8-f28ca3bcc90c,,Abnormal findings eyes Other specify,Abnormal findings eyes Other specify,Abnormal findings eyes Other specify,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+32d19a0e-2f92-4135-802d-6e35c1361129,,Nose -Organ system,Nose -Organ system,Nose -Organ system,,,,Misc,Coded,"Normal, Abnormal"
+2c2573e7-57bd-4104-8b9c-9694da608e08,,If Abnormal describe,If Abnormal describe,If Abnormal describe,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+cdb59437-578a-4326-a07f-7cdb846ef297,,Mouth -Organ system,Mouth -Organ system,Mouth -Organ system,,,,Misc,Coded,"Normal, Abnormal"
+d946be39-07d1-4e1b-9990-6f626445b8a7,,Angular cheilitis,Angular cheilitis,Angular cheilitis,,,,Misc,N/A,
+6aa356a1-7f6d-4fff-a48d-063273bd75bc,,Gingival edema and bleeding,Gingival edema and bleeding,Gingival edema and bleeding,,,,Misc,N/A,
+ec7b937c-6e4b-4533-8c75-281c806d791a,,Oral thrash,Oral thrash,Oral thrash,,,,Misc,N/A,
+8b7dd03f-5c59-4118-9565-ecd990263258,,Oral Ulcer,Oral Ulcer,Oral Ulcer,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+b413af4e-ce12-4037-971c-8bf6dfa44229,,Mouth - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Angular cheilitis, Gingival edema and bleeding, Oral thrash, Oral Ulcer, Abnormal Other"
+0c12079f-df18-40e8-8f8a-e6d9055a8ef5,,Abnormal findings mouth Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+3e6cf85e-1e91-4381-a777-45b2cde95af6,,Throat -Organ system,Throat -Organ system,Throat -Organ system,,,,Misc,Coded,"Normal, Abnormal"
+740c587b-5121-4cbc-a2c7-63b804490ada,,Exudative tonsillitis,,,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+12da1aaa-e14f-457b-b238-9b1d2874bfa6,,Throat - If abnormal tick and /or describe  additional findings,,,,,,Misc,Coded,"Exudative tonsillitis, Other"
+2109aef6-544f-4802-8d43-c6ae9fc9dd4d,,Abnormal findings throat Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+03affd5a-afd0-42a4-9c76-5dcdc54f4593,,Lymph nodes/ Glands -Organ system,,,,,,Misc,Coded,"Normal, Abnormal"
+1e306d0c-37f6-4f81-9720-7c2c5fe36b57,,Generalized LAP,Generalized LAP,Generalized LAP,,,,Misc,N/A,
+5277e38f-6b88-4407-b27c-1817111eac45,,Localized LAP,Localized LAP,Localized LAP,,,,Misc,N/A,
+d78f8a85-153b-43f8-a763-86b7dd3a6203,,Parotid Enlargement Unilateral,Parotid Enlargement Unilateral,Parotid Enlargement Unilateral,,,,Misc,N/A,
+bd25632c-cd83-4753-9e72-b3215931d7aa,,Parotid Enlargement Bilateral,Parotid Enlargement Bilateral,Parotid Enlargement Bilateral,,,,Misc,N/A,
+cbd3ca46-ae1c-4b1b-af19-e4cec79a1364,,Lymph nodes/ Glands - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Generalized LAP, Localized LAP, Parotid Enlargement Unilateral, Parotid Enlargement Bilateral"
+776ddf5a-e59e-4dd6-ad7a-643ffe7e5d25,,Localized LAP specify,Localized LAP specify,Localized LAP specify,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+a68c104e-0e7b-4c04-966d-a9e37a1d6f71,,Respiratory,Respiratory,Respiratory,,,,Misc,Coded,"Normal, Abnormal"
+17aded46-0c88-4434-ab3d-37858affbaee,,Retractions(Chest in drawing),Retractions(Chest in drawing),Retractions(Chest in drawing),,,,Misc,N/A,
+9584a97a-29e2-4ced-9995-e975ba399920,,Cyanosis,Cyanosis,Cyanosis,,,,Misc,N/A,
+224b7592-4e15-11e4-8a57-0800271c1b75,,Wheezing,Wheezing,Wheezing,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+6e2c2365-b5e7-40b1-ba5f-848b2979249b,,Respiratory/Chest - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Retractions(Chest in drawing), Cyanosis, Wheezing, Abnormal Other"
+33db6704-6cdd-46e0-b8ee-b7a874789d71,,Abnormal findings Respiratory/Chest Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+33e2d19f-4a62-4dca-8e11-e08b96d59d6b,,CVS/Heart - Organ system,,,,,,Misc,Coded,"Normal, Abnormal"
+f4866b75-de82-4deb-81fb-f6350a9aeae1,,CVS/Heart Abnormal describe,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+05c4679b-2531-44db-82c0-35022a3b9606,,SYSTEMIC FINDINGS Abdomen,,,,,,Misc,Coded,"Normal, Abnormal"
+80a1d3c1-588c-405d-ab6c-1c33df571f75,,Hepatomegaly,Hepatomegaly,Hepatomegaly,,,,Misc,N/A,
+b861a0f1-40d3-4fba-8500-a3edeefc414c,,Splenomegaly,Splenomegaly,Splenomegaly,,,,Misc,N/A,
+1cca1230-3125-4d21-93c0-12ba43d566d9,,Ascites,Ascites,Ascites,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+0b8a1b8f-156e-415b-bef4-428c56841ecf,,Abdomen - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Hepatomegaly, Splenomegaly, Ascites, Abnormal Other"
+f0d2047e-1bf4-4076-968c-0d45a879cd57,,Abnormal findings Abdomen Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+4fa94629-5591-47fb-bdc3-26f98277730b,,External Genitalia - Organ system,,,,,,Misc,Coded,"Normal, Abnormal"
+8c85e56c-43d8-4205-ba2a-33a2c11923c1,,External Genitalia describe,External Genitalia describe,External Genitalia describe,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+79c990dd-4fc7-4ac5-b026-fc868c5a9d6d,,Musculoskeletal system,,,,,,Misc,Coded,"Normal, Abnormal"
+ae0104a3-200f-40f2-8500-5250bb8abe82,,Fungal infection of the nails,Fungal infection of the nails,Fungal infection of the nails,,,,Misc,N/A,
+71717cd5-d184-4ca4-9167-569e382b6733,,Clubbing,Clubbing,Clubbing,,,,Misc,N/A,
+4a50aad6-c7ea-4c9d-b4ee-bb5601a85643,,Joint swelling/limitation,Joint swelling/limitation,Joint swelling/limitation,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+ce7561e1-36fb-4ec9-9951-a0805c967889,,Musculoskeletal system/Limbs - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Fungal infection of the nails, Clubbing, Joint swelling/limitation, Abnormal Other"
+8cd4b486-a260-4ad9-b78d-aee8ef438097,,Abnormal findings Musculoskeletal system Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+ea723122-0da5-4c1b-b82a-8e17707ea364,,Skin - Organ system,,,,,,Misc,Coded,"Normal, Abnormal"
+37ecf958-4a2f-460c-b407-ff901b6607a8,,Molluscum Contagiosum,Molluscum Contagiosum,Molluscum Contagiosum,,,,Misc,N/A,
+62c4be97-6593-46e4-b5ed-22dc776f5996,,Warts,Warts,Warts,,,,Misc,N/A,
+cc23bab5-d6eb-4e16-948b-25a366080dba,,Papular pruritic eruption,Papular pruritic eruption,Papular pruritic eruption,,,,Misc,N/A,
+c5281bd2-70b1-4efb-8863-afc296c38a95,,Pyoderma,Pyoderma,Pyoderma,,,,Misc,N/A,
+c6b7d217-b492-4035-a7d9-e091179ec510,,Abnormal Other,Abnormal Other,Abnormal Other,,,,Misc,N/A,
+383d1116-edbb-41ae-82f3-9a712049904d,,Skin - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Molluscum Contagiosum, Warts, Papular pruritic eruption, Pyoderma, Abnormal Other"
+8cd4b486-a260-4ad9-b78d-aee8ef438097,,Abnormal findings Skin Other specify,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+e5f785d7-0e0c-4e3e-a88e-e642d24bbf3e,,SYSTEMIC FINDINGS Nervous system,,,,,,Misc,Coded,"Normal, Abnormal"
+2e3dd62e-4011-4098-a0b8-09ac9117b13d,,Stiffness - Nervous system,Stiffness - Nervous system,Stiffness - Nervous system,,,,Misc,N/A,
+86fcc3b5-a30a-428d-8840-865bb32c520b,,Weakness - Nervous system,Weakness - Nervous system,Weakness - Nervous system,,,,Misc,N/A,
+aefc5773-edcd-4300-b8b6-7da69e3591ec,,Nervous system - If abnormal tick and /or describe additional findings,Nervous system - If abnormal tick and /or describe additional findings,Nervous system - If abnormal tick and /or describe additional findings,,,,Misc,Coded,"Stiffness - Nervous system, Weakness - Nervous system"
+6999d7ed-1a6f-48f2-bad4-e18559d26f19,,Abnormal findings Nervous system describe,,,,,,Question,Text,
+c45f6876-3f10-11e4-adec-0800271c1b75,,Normal,Normal,Normal,,,,Misc,N/A,
+5cd2823c-fa3b-47e4-9a20-9802ebbec8c5,,Abnormal,Abnormal,Abnormal,,,,Misc,N/A,
+4aef81de-c629-457c-a92a-ea8234defe10,,SYSTEMIC FINDINGS Developmental Assessment,,,,,,Misc,Coded,"Normal, Abnormal"
+265d2eb7-b5e4-4065-89e9-33fdeba580c9,,Delayed,Delayed,Delayed,,,,Misc,N/A,
+00ecf4d6-1f91-43b4-9ba2-d98bf6674da9,,Regression,Regression,Regression,,,,Misc,N/A,
+884f8a32-f78e-4087-838c-93fe5bc1c668,,Developmental Assessment - If abnormal tick and /or describe additional findings,,,,,,Misc,Coded,"Delayed, Regression"
+eaf81bcd-552e-465a-ac12-655751e144b8,,Abnormal findings Delayed describe,,,,,,Question,Text,
+c491474a-fcae-481a-99da-15f784cc0ecd,,Abnormal findings Regression describe,,,,,,Question,Text,

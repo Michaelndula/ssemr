@@ -1,0 +1,81 @@
+Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:6,_order:151
+9fd6778e-219d-4f14-8c0c-816e31b981dd,Newly Tested At ANC ; Known Pos On ART ; Known Pos Not On ART,,Entry to PMTCT,,Question,Coded,,
+e559d882-2171-11ea-978f-2e728ce88125,"Positive;Negative;Hiv Test, inconclusive;Refused To Disclose ; Not Applicable",,Previous HIV test result(Within 6 months),,Question,Coded,,
+e559ddbe-2171-11ea-978f-2e728ce88125,,,"Maternity card, Mother tested in Maternity",Mother tested in Maternity,Question,Boolean,,
+e559e1d8-2171-11ea-978f-2e728ce88125,"Positive;Negative;Hiv Test, inconclusive",,"Maternity card, Status After Testing HIV",Status After Testing,Question,Coded,,
+e559e340-2171-11ea-978f-2e728ce88125,,,"Maternity Card, Known +ve On ART"," Known +ve On ART",Question,Boolean,,
+e559e52a-2171-11ea-978f-2e728ce88125,,,"Maternity card, New On ART"," New On ART",Question,Boolean,,
+2d5c99da-2172-11ea-978f-2e728ce88125,"1a = AZT/3TC+EFV ;
+1b = AZT/3TC/NVP ;
+1c = TDF/3TC/DTG ;
+1d=ABC/3TC (600/300)/DTG ;
+1e = AZT/3TC +DTG ; 
+1f = TDF/3TC+EFV ;
+1g = TDF/3TC+NVP ;
+1h = TDF/FTC/EFV ;
+2a=AZT/3TC+DTG ;
+2b=ABC/3TC+DTG ;
+2c=TDF+3TC+LPV/r ;
+2d=TDF/3TC+ATV/r ;
+2e=TDF/FTC-LPV/r ;
+2f=TDF/FTC-ATV/r ;
+2g=AZT/3TC+LPV/r ;
+2h=AZT/3TC+ATV/r ;
+2i=ABC/3TC+LPV/r ;
+2j=ABC/3TC+ATV/r ;
+2k=TDF/3TC/DTG",,"Maternity card, ART Regimen During Pregnacy",ART Regimen During Pregnacy,Question,Coded,,
+2d5c9c96-2172-11ea-978f-2e728ce88125,"1a = AZT/3TC+EFV ;
+1b = AZT/3TC/NVP ;
+1c = TDF/3TC/DTG ;
+1d=ABC/3TC (600/300)/DTG ;
+1e = AZT/3TC +DTG ; 
+1f = TDF/3TC+EFV ;
+1g = TDF/3TC+NVP ;
+1h = TDF/FTC/EFV ;
+2a=AZT/3TC+DTG ;
+2b=ABC/3TC+DTG ;
+2c=TDF+3TC+LPV/r ;
+2d=TDF/3TC+ATV/r ;
+2e=TDF/FTC-LPV/r ;
+2f=TDF/FTC-ATV/r ;
+2g=AZT/3TC+LPV/r ;
+2h=AZT/3TC+ATV/r ;
+2i=ABC/3TC+LPV/r ;
+2j=ABC/3TC+ATV/r ;
+2k=TDF/3TC/DTG",,"Maternity card, ART Regimen During Delivery",ART Regimen During Delivery,Question,Coded,,
+2d5c9e4e-2172-11ea-978f-2e728ce88125,,,"Maternity card,ART Newly Started in Labor",ART Newly Started in Labor,Question,Boolean,,
+2d5ca0c4-2172-11ea-978f-2e728ce88125,,"
+Entry to PMTCT;Previous HIV test result(Within 6 months);Maternity card, Place Test Hiv;Maternity card, Date Test Hiv;Maternity card, Mother tested in Maternity;Maternity card, Date tested in Maternity;Maternity card, Status After Testing HIV;Maternity Card, Known +ve On ART;Maternity card, New On ART;Maternity card, Date Started ART;Maternity card, ART Regimen During Pregnacy;Maternity card, ART Regimen During Delivery;Maternity card,ART Newly Started in Labor","Maternity card, General Information",General Information,Misc,N/A,,
+2d5caa60-2172-11ea-978f-2e728ce88125,"Delivery Outcome, Live Birth(LB); Delivery Outcome, Macerated Still Birth(MSB) ;Delivery Outcome, Fresh Still Birth(FSB);Delivery Outcome, Neonatal Death(ND)",,"Maternity card, Delivery Outcome",Delivery Outcome,Question,Coded,,
+f78e08ab-124f-4983-9c94-fb23e2343518,"Outcome, Transferred TO ART(TART);Outcome, Lost To Follow Up; Outcome, Dead",,Maternal Outcome(last  Follow up),Maternal Outcome at last follow up,Question,Coded,,
+6d26a9c9-23cd-44fe-82b2-251aca750711,"1a = AZT/3TC+EFV ;
+1b = AZT/3TC/NVP ;
+1c = TDF/3TC/DTG ;
+1d=ABC/3TC (600/300)/DTG ;
+1e = AZT/3TC +DTG ; 
+1f = TDF/3TC+EFV ;
+1g = TDF/3TC+NVP ;
+1h = TDF/FTC/EFV ;
+2a=AZT/3TC+DTG ;
+2b=ABC/3TC+DTG ;
+2c=TDF+3TC+LPV/r ;
+2d=TDF/3TC+ATV/r ;
+2e=TDF/FTC-LPV/r ;
+2f=TDF/FTC-ATV/r ;
+2g=AZT/3TC+LPV/r ;
+2h=AZT/3TC+ATV/r ;
+2i=ABC/3TC+LPV/r ;
+2j=ABC/3TC+ATV/r ;
+2k=TDF/3TC/DTG",,ARV Mother Discharged With,ARV Mother Discharged With,Question,Coded,,
+0bdfb9bc-7f76-4690-990a-a892888b74eb,,"Maternity card, Delivery Outcome;
+Maternal Outcome(last  Follow up);Date Mother/Baby Transferred to ART;
+ARV Mother Discharged With",Other Infant Information,Other information,Misc,N/A,,
+02f876c6-c9c0-4a76-9a3e-4027e1cfb777,Negative;Positive,,Infant HIV Status,,Question,Coded,,
+fed906cd-33eb-4b04-bce7-8d7ed74e5bb8,,,Infant Received ARV Prophylaxis at Birth,Infant Received ARV Prophylaxis at Birth,Question,Boolean,,
+f2744e4c-2187-11ea-978f-2e728ce88125,"High maternal Viral Load>1000copies/ml during the last 4 weeks before delivery;An infant born to HIV infected woman who has received less than 4 weeks of ART at the time of delivery;An infant born to a newly diagnosed HIV infected woman during labour, delivery and postpartum",,High Risk Infant Classification,Infant Risk Classification,Question,Coded,,
+f2745540-2187-11ea-978f-2e728ce88125,High Risk Infant;Low Risk Infant,,Infant's Risk Status,Infant's Risk Status,Question,Coded,,
+f27444ba-2187-11ea-978f-2e728ce88125,"Infant Final Status, Discharged Negative;Infant Final Status, Referred To ART Clinic;Infant Final Status, Lost To Follow up;Infant Final Status, Transferred",,Infant's Final Status,Infant's Final Status,Question,Coded,,
+cab7181c-40f0-43ed-ae7a-8949863d8273,"Infant Final Status, Referred To ART Clinic;Infant Final Status, Lost To Follow up;Infant Final Status, Transferred",,Infant's Final Status(Positive infants),Infant's Final Status,Question,Coded,,
+f2743fa6-2187-11ea-978f-2e728ce88125,NVP;AZT+NVP,,ARV Baby Discharged with,ARV Baby Discharged with,Question,Coded,,
+8e6751eb-8435-49eb-85cb-eb1a3c5c585a,,Infant HIV Status;Infant Received ARV Prophylaxis at Birth;Infant's Risk Status;High Risk Infant Classification;Infant's Final Status;Infant's Final Status(Positive infants);ARV Baby Discharged with;Infants ART Number(For Confimed Positive Infants),Infant Information,Infant Information,Misc,N/A,,
+84253d19-1c16-45c0-8541-f0bbf11f4112,,"Maternity card, General Information;Other Infant Information;Infant Information",Maternity Form,Maternity Form,Misc,N/A,,

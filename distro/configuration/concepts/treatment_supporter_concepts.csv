@@ -1,0 +1,6 @@
+Uuid,Void/Retire,Fully specified name:en,Fully specified name:km_KH,Short name:en,Short name:km_KH,Description:en,Description:km_KH,Data class,Data type,Answers,_version:1,_order:1000
+79454234-7515-4f84-9081-ba50d22e4eac,,TreatmentSupporterFirstName,,Treatment Supporter First Name,,,,Misc,Text,,,
+c8e5f1ac-dabd-442e-856d-50354245b753,,TreatmentSupporterLastName,,Treatment Supporter Last Name,,,,Misc,Text,,,
+5301d9dc-7b9a-401f-94bc-9a13d371a145,,TreatmentSupporterTelephoneNumber,,Treatment Supporter Telephone Number,,,,Misc,Text,,,
+3d34d4ff-8e3e-4147-83c9-b5005501a34c,,TreatmentSupporterAddress,,Treatment Supporter Address,,,,Misc,Text,,,
+67321ae6-2bdb-4af6-8491-ee91de346404,,HomeCareProvidedBy,,Home Care Provided By,,,,Misc,Text,,,

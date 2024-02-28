@@ -1,0 +1,144 @@
+{
+  "name": "End of follow up",
+  "pages": [
+    {
+      "label": "End of follow up",
+      "sections": [
+        {
+          "label": "End of follow up",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Death",
+              "type": "obs",
+              "required": true,
+              "id": "isDeath",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "417b7273-8d62-4720-9fb6-075e9d1530ec",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date of death",
+              "type": "obs",
+              "required": true,
+              "id": "dateOfDeath",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "bced5365-80f5-4a27-a287-60296c4e4ff9",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "isDeath !=='78763e68-104e-465d-8ce3-35f9edfb083d'"
+              },
+              "validators": []
+            },
+            {
+              "label": " Lost to follow-up (28+ days)",
+              "type": "obs",
+              "required": true,
+              "id": "lostToFollowUp",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7053eaca-fc21-4b73-b246-b6e9ae3b3f67",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Date of last visit",
+              "type": "obs",
+              "required": false,
+              "id": "dateOfLastVisit",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "773cd838-7b21-4f34-9b33-0a071140f817",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "lostToFollowUp !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Transfer out",
+              "type": "obs",
+              "required": false,
+              "id": "transferOut",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "68f68ae1-272c-44e4-85af-009e46e60015",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Transferred Out Date",
+              "type": "obs",
+              "required": false,
+              "id": "dateTransferDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "9531371b-ba97-4f57-9edb-7480d908b8f8",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "hide": {
+                "hideWhenExpression": "transferOut !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
+              },
+              "validators": []
+            },
+            {
+              "label": "Transfer To",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "transferTo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "81e13b91-3f10-11e4-adec-0800271c1b75",
+  "referencedForms": [],
+  "uuid": "61c0c516-f240-423f-8fc0-14e478809480",
+  "description": "End of follow up form",
+  "version": "1.0.0"
+}

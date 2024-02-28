@@ -1,0 +1,471 @@
+{
+	"name": "VL Labaratory request form",
+	"pages": [
+	  {
+		"label": "Visit Details",
+		"sections": [
+		  {
+			"label": "Visit Details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date",
+				"type": "obs",
+				"required": false,
+				"id": "date",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "e605731b-2e81-41a9-8446-2ed442c339e2",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Sample information",
+		"sections": [
+		  {
+			"label": "Sample information",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date of sample collection",
+				"type": "obs",
+				"required": false,
+				"id": "dateOfSampleCol",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "ed520e2d-acb4-4ea9-8ae5-16ca27ace96d",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Time Sample Collected",
+				"type": "obs",
+				"required": false,
+				"id": "timesampleCol",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "9fc84874-ec1c-4f15-9e0d-5a73dd416667",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Sample type",
+				"type": "obs",
+				"required": false,
+				"id": "sampleType",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "7b532bef-9232-4675-a359-7b1310b66d3a",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "c7b68a75-903e-4740-9482-bffc01fb844a",
+					  "label": "Sample Type ,DBS"
+					},
+					{
+					  "concept": "f0da3750-83bc-400e-b3f0-a0ced2e7e47f",
+					  "label": "Sample Type ,Plasma"
+					},
+					{
+					  "concept": "ff67ca7f-4e07-42f3-884e-7e36878b344e",
+					  "label": "Sample Type,Whole Blood"
+					}
+				  ]
+				},
+				"validators": []
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Treatment Information",
+		"sections": [
+		  {
+			"label": "Treatment Information",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date of treatment Initiation",
+				"type": "obs",
+				"required": false,
+				"id": "dateTreatmentInitiation",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "44dba186-7507-41d4-811f-79eae073cdcc",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date of Initiation of Current Regimen",
+				"type": "obs",
+				"required": false,
+				"id": "dateInitiateReg",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Is patient pregnant",
+				"type": "obs",
+				"required": false,
+				"id": "pregnant",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "235a6246-6179-4309-ba84-6f0ec337eb48",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Is patient breastfeeding?",
+				"type": "obs",
+				"required": false,
+				"id": "breastFeeding",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "e288fc7d-bbc5-479a-b94d-857e3819f926",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "ARV Adherence ",
+				"type": "obs",
+				"required": false,
+				"id": "arvAdherence",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "e126652c-8d02-4c4b-a49d-5bac03eb4d03",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "53b5adc3-a342-48fc-bff9-5981db672d06",
+					  "label": "Fair  85 - 95 %"
+					},
+					{
+					  "concept": "82a03cc2-89aa-4c6a-85d4-66bba07a6334",
+					  "label": "Good > 95 %"
+					},
+					{
+					  "concept": "c253579e-c9ad-4c83-b322-6b1c34ce81c2",
+					  "label": "Poor < 85 %"
+					}
+				  ]
+				},
+				"validators": []
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Indication for VL testing",
+		"sections": [
+		  {
+			"label": "Routine monitoring ",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Last VL date",
+				"type": "obs",
+				"required": false,
+				"id": "vlDateMonitoring",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "0ffdbc2e-8883-4648-905a-68ceab83bb6f",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Value",
+				"type": "obs",
+				"required": false,
+				"id": "valueMonitoring",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "db923866-cfc6-47a5-8ae4-1e37d75db195",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  },
+		  {
+			"label": "Repeat VL test after suspected treatment failure & adherence counselling ",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Last VL date",
+				"type": "obs",
+				"required": false,
+				"id": "vlDateRepeat",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "acfbb9f8-8b3c-4f97-b47a-51851b063367",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Value",
+				"type": "obs",
+				"required": false,
+				"id": "ValueRepeatVL",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "5ad34c7c-3a92-496c-b7d7-2210aca554bd",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  },
+		  {
+			"label": "Suspected treatment failure",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Last VL date",
+				"type": "obs",
+				"required": false,
+				"id": "vldateSusTreatFailure",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "b3b195ff-0e6c-420f-bf60-483f24902066",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Value",
+				"type": "obs",
+				"required": false,
+				"id": "valueTreatFailure",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "7906cef9-4843-40f7-8fee-0e69cb00e7b8",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Request Clinician",
+		"sections": [
+		  {
+			"label": "Request Clinician",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Clinician Name",
+				"type": "obs",
+				"required": false,
+				"id": "clinicianName",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "611d6c22-7c6d-47cf-a74e-190f9e3cdd47",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Phone",
+				"type": "obs",
+				"required": false,
+				"id": "clinicianPhone",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "f53940f7-5fbb-45a2-a567-26a64240b42b",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Request Date",
+				"type": "obs",
+				"required": false,
+				"id": "dateRequested",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "b853ddc3-3d8c-4b0b-99ac-497624c9904d",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  },
+		  {
+			"label": "VL Focal Person",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "VL Focal Person ",
+				"type": "obs",
+				"required": false,
+				"id": "vlFocalPerson",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "db73e6cd-57e7-4cca-83b7-7d4c532c5621",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "VL Focal Person Phone",
+				"type": "obs",
+				"required": false,
+				"id": "focalPersonPhone",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "d3522e54-bbea-47e8-bc0d-c275cc00427b",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  },
+		  {
+			"label": "Email for HF",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Email for HF",
+				"type": "obs",
+				"required": false,
+				"id": "emailHF",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "dfcedbb1-11fe-4e19-969c-f88539ebc31f",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date sample received at testing Lab",
+				"type": "obs",
+				"required": false,
+				"id": "dateSampleRecievedLab",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "0bfdbae3-ea5d-4173-a4e1-7f42d50e0bc6",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date Results Dispatched",
+				"type": "obs",
+				"required": false,
+				"id": "dateResultDispatched",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "4db52045-d459-4c3e-b0b4-b7d00b18ed1e",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Rejection",
+				"type": "obs",
+				"required": false,
+				"id": "rejection",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "5986b9bb-b9e0-4c8a-bf16-6562fc3076a6",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  }
+			]
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"encounterType": "82024e00-3f10-11e4-adec-0800271c1b75",
+	"referencedForms": [],
+	"uuid": "5560f1f1-0903-4853-89d0-70365282ceb9",
+	"description": "VL Labaratory request form",
+	"version": "1.0"
+  }

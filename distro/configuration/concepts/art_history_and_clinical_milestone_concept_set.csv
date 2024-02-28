@@ -1,0 +1,13 @@
+Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:2,_order:125
+4ba4ea3a-a4dc-41c0-94ab-89a1985f9354,,,Were ARVS Received?,Were ARVS Received Before?,Question,Boolean,,
+6d75a232-9d41-46b6-a986-0551ce0b99c1,PMTCT ; PEP ; Earlier ART not Transfer in,,ARVs Received in,,Question,Coded,,
+368dfc46-41a0-4a43-b945-f10ede2ac683,Private ; Government ; Other Answer,,Place Received ART,,Question,Coded,,
+9734068e-4f96-4133-a7c0-d9d524c0fd7b,,"Were ARVS Received?;ART start date ; ART ,Stop Date; ARVs Received in; Place Received ART ; Other (Place specify)",ART History - Clinical Milestones,,Misc,N/A,,
+0ac8dcad-680b-41ae-a242-e4e0c0f5ec90,,"CD4 ",CD4 Details,,Misc,N/A,,
+4aab8bd3-1f63-4ab2-868d-6f1d9e9b0d15,,Viral load First Result ; Viral load Second Result ;Viral load Third Result,Viral Load Test Information,,Misc,N/A,,
+a5b96e1d-dca8-496f-8156-e8a9ec7accee,,ART History - Clinical Milestones ; CD4 Details ; Viral Load Test Information,ART History Information,,Misc,N/A,,
+e38e6ce2-92d9-4382-927b-5555ff9fa850,Stage 1; Stage 2; Stage 3 ; Stage 4,,WHO Stage,,Question,Coded,,
+0fca1e93-c834-487d-8ad0-bd351ceed278,,WHO Stage ; Weight - Clinical Milestone ; HEIGHT (CM),Milestones At the Start Of ART,,Misc,N/A,,
+46ca8f66-d383-48d4-b388-d642f8d7f8f1,,,Is Patient on CTX or Dapose?,,Question,Boolean,,
+b06ba468-f783-4d77-8c0b-0d4b920e47b0,,Is Patient on CTX or Dapose?  ; Milestones At the Start Of ART,Clinical Lab Milestones,,Misc,N/A,,
+54857487-063a-4f92-a388-e3267b97d22a,,ART History Information ; Clinical Lab Milestones,"ART History And Clinical Milestone ",,Misc,N/A,,

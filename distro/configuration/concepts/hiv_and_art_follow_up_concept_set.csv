@@ -1,0 +1,43 @@
+Uuid,Answers,Members,Fully specified name:en,Data class,Data type,_version:3,_order:127
+609d59f7-79d1-4748-ad86-57c831dbff60,Condoms ; Implant ;IUCD ; Depo,,FP Method,Question,Coded,,
+1c44444b-ac9a-4d2a-bb83-9299ab05668c,2HRZE/4RH ; 2SHRZE/1HRZE/5RH,,TB Regimen On,Question,Coded,,
+4199b8d5-ab1f-4623-9083-a6764059f424,2HRZE/10RH,,TB Regimen For Children,Question,Coded,,
+5ba046b4-42e9-4ffb-81a2-6cd4fc03ee70,4 Am-Mfx-Pto-Clz-Z-H high-dose-E/5 Mfx-Cfx-Cfz-Z-E,,TB Regimen Second Line,Question,Coded,,
+e360501a-123a-4efb-93ef-4dc19d031921,Adherence Good ; Adherence Fair ; Adherence Poor,,CTX Adherence,Question,Coded,,
+e38e6ce2-92d9-4382-927b-5555ff9fa850,Stage 1 ;Stage 2 ;Stage 3;Stage 4,,WHO Stage,Question,Coded,,
+23322fd6-3dbb-410e-8bee-6210dfcd5f71,"1a = AZT/3TC+EFV ;
+1b = AZT/3TC/NVP ;
+1c = TDF/3TC/DTG ;
+1d=ABC/3TC (600/300)/DTG ;
+1e = AZT/3TC +DTG ; 
+1f = TDF/3TC+EFV ;
+1g = TDF/3TC+NVP ;
+1h = TDF/FTC/EFV ;
+2a=AZT/3TC+DTG ;
+2b=ABC/3TC+DTG ;
+2c=TDF+3TC+LPV/r ;
+2d=TDF/3TC+ATV/r ;
+2e=TDF/FTC-LPV/r ;
+2f=TDF/FTC-ATV/r ;
+2g=AZT/3TC+LPV/r ;
+2h=AZT/3TC+ATV/r ;
+2i=ABC/3TC+LPV/r ;
+2j=ABC/3TC+ATV/r ;
+2k=TDF/3TC/DTG",,ARV Regimen,Question,Coded,,
+cf5c7deb-f67c-4406-82ea-d619e502f47c,,,Currently Breastfeeding?,Question,Boolean,,
+7ddb08f2-09e8-48ef-a08f-3744467fec48,,,INH,Question,Boolean,,
+da20f4fc-94b4-421c-896c-cf16a834227a,,,Enroll Patient To PMTCT,Question,Boolean,,
+b6ae8e33-aa58-47e4-84be-5b8599a177b7,,"FP Pregnant ; EDD ;PMTCT - HIV & ART Follow up ; Enroll Patient To PMTCT; Current on FP ; FP Method ;Currently Breastfeeding?;  On TB Treatment ;Date Started TB Treatment ; TB Unit Number;TB Clinic Enrolled;Date Started TB RX  ; TB Regimen For Children;Side Effects ; New OI (other Problems);WHO Stage ; Cotrimoxazole/Dapsone,ART Followup; CTX Adherence; Reason why Adherence is Fair; Reason why Adherence is Poor;CTX Dose;INH ; Number of Pill Dispensed(INH) ;ARV Regimen ; Number of Days Dispensed",ART Follow up - Information,Misc,N/A,,
+1a07bffa-2e01-43bb-880e-c68c02300b36,Adherence Good ; Adherence Fair ; Adherence Poor,,EAC Results,Question,Coded,,
+46ae050e-e1b6-48e6-aa1f-bba975347f5a,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(First EAC session),Question,Coded,,
+7c9976a3-f646-4ed4-8d2f-ab133ea9b292,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Second EAC session),Question,Coded,,
+6851bf56-ded4-4b89-ba93-d9d380927e15,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence(Third EAC session),Question,Coded,,
+ee910383-e469-4eab-a634-76a2f7a762c9,Adherence Good ; Adherence Fair ; Adherence Poor,,Classification Of Adherence After EAC,Question,Coded,,
+eeb4976d-704f-4dd0-a84b-34cfb06a52d6,,,MDT Held?,Question,Boolean,,
+85221b4d-ae80-402a-9d9a-8c9ba504771c,Extending EAC;Switch Regimen,,MDT Outcome,Question,Coded,,
+d5d1d355-9e77-4e11-b733-884974f51169,,,was counselling done?,Question,Boolean,,
+02e3c15a-c756-4a66-9b2f-bb75140eec3e,,Date VL Sample Collected? ; VL Results,Investigations,Misc,N/A,,
+07bee146-a5c0-432a-aa39-6c8bb0818634,,Date VL Sample Collected? ; VL Results,"Viral Load Information,",Misc,N/A,,
+0fc3cc86-6c9f-4d79-9c39-900dab27a33c,Refer ; Consult ;Link/Provide;None,,Plan,Question,Coded,,
+9890cc1e-dbaf-49ec-82bb-1093dcf92ab6,,Plan;Hospitalised; Number of Days Hospitalized ; Clinician Name,Follow up Information,Misc,N/A,,
+beffd410-b9a4-4cfd-9a29-22512980de1b,,"ART Follow up - Information ; Viral Load Information, ; Follow up Information",HIV AND ART FOLLOW UP FORM,Misc,N/A,,

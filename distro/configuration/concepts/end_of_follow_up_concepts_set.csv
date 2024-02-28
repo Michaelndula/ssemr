@@ -1,0 +1,9 @@
+Uuid,Answers,Members,Fully specified name:en,Short name:en,Data class,Data type,_version:1,_order:130
+4acd75d7-1bd1-40a1-8ba2-0653893319ef,"Cause Of Death, TB;Cause Of Death, Cancer;Cause Of Death, Other Other infectious  and parasitic disease;Cause Of Death, Non-natural causes (accident/war);Cause Of Death,Unknown Cause",,"End of Follow-up,Cause Of Death",Cause Of Death,Question,Coded,,
+f49a0381-3dc7-47d8-a9a6-4cfd433f1d34,,"Lost Follow up - Date of Death;End of Follow-up,Cause Of Death",Death Information,,Misc,N/A,,
+40bdba82-8cbf-4902-998e-e51a7cd11966,," Lost Follow up (Last Visit Date) ",Lost To Follow Up Information,,Misc,N/A,,
+759ff83c-e9dc-4e69-9ec4-279631546b98,," Transferred Out Date; Location",Transferred Out Information,,Misc,N/A,,
+b8f1bfaf-c969-482e-bf2f-4f8ac95456a0,,Self Transfer Date,Self Transfer Information,,Misc,N/A,,
+28cf30e9-d37b-474d-a715-f62cd19a62e5,Death ;Lost Follow Up(< 28days) ;Transferred Out,,End Of Follow Up Reason,,Question,Coded,,
+12b33328-f06b-40ec-81f0-7da20ddc9580,"Self transfer(Silent Transfer);Traced patient (Unable to locate) ; Did not attempt to trace patient ; Patient outcome, Death",,"End of Follow up,Patient Outcome",Patient Outcome,Question,Coded,,
+8ef5716c-0df6-48d3-92fb-f9476424a8e0,,"End of Follow up,Patient Outcome;Self Transfer Information;End Of Follow Up Reason ; Death Information ; Lost To Follow Up Information ; Transferred Out Information",End Of Follow Up Form,,Misc,N/A,,

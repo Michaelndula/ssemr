@@ -1,0 +1,800 @@
+{
+	"name": "High viral load form",
+	"description": "High viral load form",
+	"version": "1",
+	"published": true,
+	"uuid": "",
+	"retired": false,
+	"encounter": "High Viral Load",
+	"pages": [
+	  {
+		"label": "High viral load form",
+		"sections": [
+		  {
+			"label": "Visit details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date",
+				"type": "obs",
+				"required": false,
+				"id": "date",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "e605731b-2e81-41a9-8446-2ed442c339e2",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  },
+		  {
+			"label": "ARV information",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "ARV regimen",
+				"type": "obs",
+				"id": "arvRegimen",
+				"questionOptions": {
+				  "concept": "23322fd6-3dbb-410e-8bee-6210dfcd5f71",
+				  "rendering": "select",
+				  "answers": [
+					{
+					  "concept": "9062c6d9-a650-44d2-8929-da84f617c427",
+					  "label": "1a = AZT/3TC+EFV"
+					},
+					{
+					  "concept": "c22e6700-a937-4909-b4ad-e82ff51325ac",
+					  "label": "1b = AZT/3TC/NVP"
+					},
+					{
+					  "concept": "a00d9620-e88b-4c2f-9293-b1ac9e5943f2",
+					  "label": "1c = TDF/3TC/DTG"
+					},
+					{
+					  "concept": "5d500ca2-350a-49ee-a3d4-f340db32ff31",
+					  "label": "1d=ABC/3TC (600/300)/DTG"
+					},
+					{
+					  "concept": "3fd242a8-7ade-463c-8919-d82573ea8526",
+					  "label": "1e = AZT/3TC +DTG"
+					},
+					{
+					  "concept": "91f5d0d6-eb81-484f-9376-4bfb926a5a81",
+					  "label": "1f = TDF/3TC+EFV"
+					},
+					{
+					  "concept": "0dd3e78f-e1fc-47de-95bc-1f489d0dfcc5",
+					  "label": "1g = TDF/3TC+NVP"
+					},
+					{
+					  "concept": "4a86fbee-07a9-422a-bf69-16256c0c2b8b",
+					  "label": "1h = TDF/FTC/EFV"
+					},
+					{
+					  "concept": "bd97cacd-4a91-4901-8803-3a4a2e5f1ca8",
+					  "label": "2a=AZT/3TC+DTG"
+					},
+					{
+					  "concept": "ad6ff4ef-769e-4aec-b8bb-7f033fe6aaaa",
+					  "label": "2b=ABC/3TC+DTG"
+					},
+					{
+					  "concept": "47167ec1-4957-4d0a-a58c-3894bdeb93ff",
+					  "label": "2c=TDF+3TC+LPV/r"
+					},
+					{
+					  "concept": "e649a0ec-e193-4af0-bb49-02687107a893",
+					  "label": "2d=TDF/3TC+ATV/r"
+					},
+					{
+					  "concept": "accca537-b8ee-41ec-b902-7de814d099b2",
+					  "label": "2e=TDF/FTC-LPV/r"
+					},
+					{
+					  "concept": "77f201fc-aefc-4068-baa7-cb3284782a38",
+					  "label": "2f=TDF/FTC-ATV/r"
+					},
+					{
+					  "concept": "cb0f9fcd-fb52-493f-95aa-d0197387fbdb",
+					  "label": "2g=AZT/3TC+LPV/r"
+					},
+					{
+					  "concept": "28790bde-81db-4490-806b-ac10c17b41dc",
+					  "label": "2h=AZT/3TC+ATV/r"
+					},
+					{
+					  "concept": "aae69cae-2806-4e8b-a916-f22ed733a19b",
+					  "label": "2i=ABC/3TC+LPV/r"
+					},
+					{
+					  "concept": "64336206-c9bc-4d37-accf-c7abac7a37f6",
+					  "label": "2j=ABC/3TC+ATV/r"
+					},
+					{
+					  "concept": "25f0cca5-902d-4e36-9e4f-5ce5da744a75",
+					  "label": "2k=TDF/3TC/DTG"
+					}
+				  ]
+				}
+			  },
+			  {
+				"label": "Date of Initiation:",
+				"type": "obs",
+				"id": "dateInitiation",
+				"questionOptions": {
+				  "concept": "30f1f347-d72c-4920-9962-6d55d138e8e5",
+				  "rendering": "date"
+				}
+			  }
+			]
+		  },
+		  {
+			"label": "Viral load results",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date of Sample Collection",
+				"type": "obs",
+				"id": "dateSampleCollection",
+				"questionOptions": {
+				  "concept": "ed520e2d-acb4-4ea9-8ae5-16ca27ace96d",
+				  "rendering": "date"
+				}
+			  }
+			]
+		  },
+		  {
+			"label": "WHO T-staging",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Current WHO T-staging",
+				"type": "obs",
+				"id": "dateSampleCollection",
+				"questionOptions": {
+				  "concept": "e38e6ce2-92d9-4382-927b-5555ff9fa850",
+				  "rendering": "select",
+				  "answers": [
+					{
+					  "concept": "88f2a6ea-367d-45dc-942a-b809b0d17275",
+					  "label": "Stage 1"
+					},
+					{
+					  "concept": "17a3b24b-e107-49fe-8b0d-69c3b7e60f4c",
+					  "label": "Stage 2"
+					},
+					{
+					  "concept": "ebd187f8-d15a-4fad-8849-9f74da5c3fc9",
+					  "label": "Stage 3"
+					},
+					{
+					  "concept": "831d263e-4dfb-4f05-bcfb-629961c07844",
+					  "label": "Stage 4"
+					}
+				  ]
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Enhanced adherence counselling",
+		"sections": [
+		  {
+			"label": "Enhanced adherence counselling",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date",
+				"type": "obs",
+				"required": false,
+				"id": "adherenceDate",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "039704e4-7d5c-4062-b490-8252069ba142",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "EAC Session",
+				"type": "obs",
+				"required": true,
+				"id": "eacSession",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "65536958-fc01-4002-8839-af4b6ab0489b",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "37f1e487-24f7-48f3-a347-391e877152e4",
+					  "label": "First EAC Session"
+					},
+					{
+					  "concept": "348c5147-4e54-420a-a035-b322e1ba0b6e",
+					  "label": "Second EAC Session"
+					},
+					{
+					  "concept": "60966dae-3999-42b9-aec1-6161cebb22c1",
+					  "label": "Third EAC Session"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Adherence",
+				"type": "obs",
+				"required": false,
+				"id": "adherence",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "46ae050e-e1b6-48e6-aa1f-bba975347f5a",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "535ea56b-0138-4804-ab23-e70f2dbe0b61",
+					  "label": "Fair"
+					},
+					{
+					  "concept": "714752ad-61df-44e0-ae40-fa9bf4f9d831",
+					  "label": "Good"
+					},
+					{
+					  "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a",
+					  "label": "Poor"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Barriers",
+				"type": "obs",
+				"required": false,
+				"id": "adherenceBarriers",
+				"questionOptions": {
+				  "rendering": "multiCheckbox",
+				  "concept": "4d1b1fcb-2f88-4c54-b81c-b80faea42146",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "a2832452-f729-4d85-87ff-04caa9185a5b",
+					  "label": "Alcohol/Drugs"
+					},
+					{
+					  "concept": "f02ffea9-5b05-4330-ba18-38222fd24028",
+					  "label": "Child Behaviour/Refusing for Children on ART"
+					},
+					{
+					  "concept": "f94de22a-75cc-4361-afb8-57ebc2f95579",
+					  "label": "Concurrent illness"
+					},
+					{
+					  "concept": "506d37ec-84b7-418c-925e-2a0ff9d72300",
+					  "label": "Depression"
+					},
+					{
+					  "concept": "15ca08ce-8b64-4652-ad03-2ff3da85a015",
+					  "label": "Drug Stock Out"
+					},
+					{
+					  "concept": "6d258ec0-6cf0-4905-b439-027fcbb0732f",
+					  "label": "Failure To Adjust To food Insecurity"
+					},
+					{
+					  "concept": "2a28777a-037f-4334-af14-a8feb6acfb2d",
+					  "label": "Fear Disclosure"
+					},
+					{
+					  "concept": "c417a890-ceea-487e-b19f-6358a6e39379",
+					  "label": "Feeling Better"
+					},
+					{
+					  "concept": "188dc5ba-1c33-4789-b39c-267a2ff29b96",
+					  "label": "Forgot"
+					},
+					{
+					  "concept": "d7be0a00-82a2-47ef-87f7-13a25f881dc1",
+					  "label": "Health/Beliefs/Alternate Remedies"
+					},
+					{
+					  "concept": "d55337ae-d344-44cb-b780-0f051f6cb6b2",
+					  "label": "Knowledge"
+					},
+					{
+					  "concept": "6ff84fab-c338-42f6-9e43-aebdd72a12a8",
+					  "label": "Lack of Familiy/Partner Support"
+					},
+					{
+					  "concept": "dd8f80f0-d238-4d4b-bd26-a58316eba54c",
+					  "label": "Long Wait"
+					},
+					{
+					  "concept": "19c263aa-395e-4250-a762-2405c5d3b533",
+					  "label": "Lost/Damaged"
+					},
+					{
+					  "concept": "a393d1ee-e6eb-4f84-b75c-848a99343760",
+					  "label": "Other First EAC Barrier Reason"
+					},
+					{
+					  "concept": "68a10b27-ab05-470c-b2c0-0a13e26b14c1",
+					  "label": "Pill Burden"
+					},
+					{
+					  "concept": "24c7d1f1-26f6-495e-b7f8-79b45991ef1a",
+					  "label": "Political Crisis"
+					},
+					{
+					  "concept": "a9b92884-e629-4a6a-8214-0557f52ebb97",
+					  "label": "Ran out Of Medcation"
+					},
+					{
+					  "concept": "7a15f044-a900-4c68-8d66-40f93aa94102",
+					  "label": "Scheduling"
+					},
+					{
+					  "concept": "edbb167f-935e-41d2-b699-9e437ceea7f3",
+					  "label": "Sharing Medications"
+					},
+					{
+					  "concept": "13498474-ba95-4fec-8010-c8c5e24748ff",
+					  "label": "Side Effects"
+					},
+					{
+					  "concept": "0cf0ff1e-09b7-40d8-ba16-431033de9828",
+					  "label": "Stigma"
+					},
+					{
+					  "concept": "a437c938-ff0f-44f6-82d1-9363d593638d",
+					  "label": "Transport"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Interventions",
+				"type": "obs",
+				"required": false,
+				"id": "intervention",
+				"questionOptions": {
+				  "rendering": "multiCheckbox",
+				  "concept": "bd2f2773-e364-47c1-b824-07a5e6efbe06",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "7c03516d-9ad0-4cc6-8e02-b8f7d92f571a",
+					  "label": "Case Mgmt."
+					},
+					{
+					  "concept": "53c0db5c-38f9-4863-bcb2-a547d6b6b24a",
+					  "label": "Clinical"
+					},
+					{
+					  "concept": "a7675030-3110-4b81-9380-4eceb0b8cf2d",
+					  "label": "Counselling(grp)"
+					},
+					{
+					  "concept": "548d084a-1eb2-46f8-bc2b-8b721f5511de",
+					  "label": "Counselling(ind)"
+					},
+					{
+					  "concept": "9b2056fd-7ecd-4852-87e4-fb75d66d7d1c",
+					  "label": "DOT"
+					},
+					{
+					  "concept": "c11dcd7e-2ba5-42a2-96bb-91c1320541ba",
+					  "label": "Drug pick-up"
+					},
+					{
+					  "concept": "65b2b048-039c-49a5-8712-cfec020af970",
+					  "label": "Education"
+					},
+					{
+					  "concept": "de829763-efa4-4abf-b31d-ccb3cb631554",
+					  "label": "Peer Support"
+					},
+					{
+					  "concept": "3bbe3de8-66bb-4873-8355-78b672a4cd4f",
+					  "label": "Treatment Buddy"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "First EAC Tools",
+				"type": "obs",
+				"required": false,
+				"id": "firstEACTools",
+				"questionOptions": {
+				  "rendering": "multiCheckbox",
+				  "concept": "8f856c55-6048-4a5d-97b7-4c1ee8e64424",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "310d8d2e-f0ea-43b5-810c-b6ea7d682e2a",
+					  "label": "Alarms"
+					},
+					{
+					  "concept": "10e70817-2ddd-4c0f-901f-f880cf174f4a",
+					  "label": "Calendar"
+					},
+					{
+					  "concept": "c8c12202-78cd-4487-a372-9e0bb7b82d22",
+					  "label": "Journal/Log"
+					},
+					{
+					  "concept": "f76732e9-2326-4e93-9621-620813671885",
+					  "label": "Phone Calls"
+					},
+					{
+					  "concept": "67985df7-5e83-421d-93af-adf4f79bd8bb",
+					  "label": "Pill Box"
+					},
+					{
+					  "concept": "35377043-8cdd-4c4d-9882-ee84e7a5e0a7",
+					  "label": "SMS"
+					},
+					{
+					  "concept": "040e2374-cba4-4ed2-9a78-ca6bf7794b19",
+					  "label": "Written Intructions"
+					},
+					{
+					  "concept": "fde15ffa-a932-4283-a2fb-644e2a6f78be",
+					  "label": "Other Tools for First EAC"
+					}
+				  ]
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "eacSession !== '37f1e487-24f7-48f3-a347-391e877152e4'"
+				}
+			  },
+			  {
+				"label": "Specify Other Tools for First EAC",
+				"type": "obs",
+				"required": false,
+				"id": "otherTools",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "e56df280-c5d1-4462-953d-a01c9c76548c",
+				  "conceptMappings": []
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "firstEACTools !== 'fde15ffa-a932-4283-a2fb-644e2a6f78be'"
+				}
+			  },
+			  {
+				"label": "Pill intake",
+				"type": "obs",
+				"required": false,
+				"id": "pillIntake",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "7ccc6227-f42f-4c45-822a-e11961ada35a",
+				  "min": 0,
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Pill percentage",
+				"type": "obs",
+				"required": false,
+				"id": "pillPercentage",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "4ba12b8a-72a4-4135-8c06-be72532b7650",
+				  "min": 0,
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": [],
+				"hide": {
+				  "hideWhenExpression": "isEmpty(eacSession) || eacSession === '37f1e487-24f7-48f3-a347-391e877152e4'"
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Major remaining barriers",
+		"sections": [
+		  {
+			"label": "Major remaining barriers identified after EAC sessions:  ",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Behavioural",
+				"type": "obs",
+				"required": false,
+				"id": "BehaviouralB",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "fb428d3c-fb82-4182-9eca-d864a317c785",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Cognitive",
+				"type": "obs",
+				"required": false,
+				"id": "cognitive",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "824ebb29-6640-4b3f-b1dd-6f8a6c5063f5",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "f9f633a5-1544-4c44-9394-a7f746a12dff",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Socio-economic",
+				"type": "obs",
+				"required": false,
+				"id": "socioEcon",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "3891c093-0daf-42a7-a140-571224c43678",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Emotional",
+				"type": "obs",
+				"required": false,
+				"id": "emotional",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "32c19f52-dbcc-49f5-a017-f5ce589b7216",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "true",
+					  "label": "Yes"
+					},
+					{
+					  "concept": "false",
+					  "label": "No"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Identified Barriers to adherence attended",
+				"type": "obs",
+				"required": false,
+				"id": "barriersAttended",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "c7369d4b-ff53-4cb5-b6e8-f053eb01c2cc",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Comments",
+				"type": "obs",
+				"required": false,
+				"id": "comment",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "c3659bf9-3f10-11e4-adec-0800271c1b75",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date of extra session",
+				"type": "obs",
+				"required": false,
+				"id": "dateOfExtraSession",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "0fa5669b-041d-446d-9ae6-8e88a980858f",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Pill intake",
+				"type": "obs",
+				"required": false,
+				"id": "pillIntakeExtra",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "7ccc6227-f42f-4c45-822a-e11961ada35a",
+				  "conceptMappings": [],
+				  "min": 0,
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Agreed plan of action",
+				"type": "obs",
+				"required": false,
+				"id": "agreedPlan",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "b2e88abb-5e64-406d-8f01-1a80b7af22e6",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date of collection of repeat Viral Load",
+				"type": "obs",
+				"required": false,
+				"id": "dateRepeatVL",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "c8ef861f-cdcb-4605-83ae-29a95b1d5e27",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Counsellor",
+				"type": "obs",
+				"required": false,
+				"id": "counsellor",
+				"questionOptions": {
+				  "rendering": "text",
+				  "concept": "7d6f2311-5eb3-49fe-acda-9d591447ceb0",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Date of assessment",
+				"type": "obs",
+				"required": false,
+				"id": "DateOfassessment",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "71d64d77-f53f-4093-9651-2952c5777275",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"label": "Outcome",
+		"sections": [
+		  {
+			"label": "REPEAT VIRAL LOAD  (Complete 3-6 months AFTER good adherence is achieved)",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Repeat Viral Load result",
+				"type": "obs",
+				"required": false,
+				"id": "repeatVLResult",
+				"questionOptions": {
+				  "rendering": "number",
+				  "concept": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd",
+				  "min": 0,
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Repeat Viral Load result <1000c/ml, ≥1000c/ml",
+				"type": "obs",
+				"required": false,
+				"id": "repeatVLRGreater",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "a1b9b338-fd39-4a8d-9f3a-aef2a9b0bce4",
+				  "conceptMappings": [],
+				  "answers": [
+					{
+					  "concept": "ae23fa12-b7fc-49e0-be21-aa2f5bc32f97",
+					  "label": "<1000c/ml"
+					},
+					{
+					  "concept": "edaf153d-70ff-44f2-8c6e-7242dfd36f5f",
+					  "label": "≥1000c/ml"
+					}
+				  ]
+				},
+				"validators": []
+			  },
+			  {
+				"label": "Repeat Viral Load date",
+				"type": "obs",
+				"required": false,
+				"id": "repeatVLDate",
+				"questionOptions": {
+				  "rendering": "date",
+				  "concept": "06cee3e6-daaa-48cf-aa53-296254ee61a3",
+				  "conceptMappings": [],
+				  "answers": []
+				},
+				"validators": []
+			  }
+			]
+		  },
+		  {
+			"label": "Outcome for patients with persistently high Viral Load ≥ 1000c/ml (To be filled by the ART provider)",
+			"isExpanded": "true",
+			"questions": []
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": [],
+	"encounterType": "f7f1c854-69e5-11ee-8c99-0242ac120002"
+  }

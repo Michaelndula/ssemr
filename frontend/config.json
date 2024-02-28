@@ -1,0 +1,155 @@
+{
+    "@openmrs/esm-patient-test-results-app": {
+      "concepts": [
+        {
+          "defaultOpen": true,
+          "conceptUuid": "7b8851e3-e97e-4345-aea9-9112ea625c84"
+        }
+      ]
+    },
+    "@openmrs/esm-styleguide": {
+      "Brand color #1": "#0070E7",
+      "Brand color #3": "#017BFC",
+      "Brand color #2": "#005CBF"
+    },
+    "@openmrs/esm-login-app": {
+      "logo": {
+        "src": "/openmrs/spa/login-icon.svg"
+      }
+    },
+    "@openmrs/esm-primary-navigation-app": {
+      "logo": {
+        "src": "/openmrs/spa/primary-navigation.png"
+      }
+    },
+    "@openmrs/esm-patient-chart-app": {
+      "logo": {
+        "src": "/openmrs/spa/primary-navigation.png"
+      }
+    },
+    "@ssemr/esm-patient-registration-app": {
+      "sectionDefinitions": [
+        {
+          "id": "nextOfKin",
+          "name": "Treatment Supporter Details",
+          "fields": [
+            "txSupporterName",
+            "txSupporterAddress",
+            "txSupporterPhoneNo",
+            "homeBasedcareProvider"
+          ]
+        }
+      ],
+      "sections": [
+        "demographics",
+        "contact",
+        "nextOfKin"
+      ],
+      "fieldDefinitions": [
+        {
+          "id": "phone",
+          "type": "person attribute",
+          "uuid": "8f0a2a16-c073-4622-88ad-a11f2d6966ad",
+          "label": "Client's Telephone number",
+          "validation": {
+            "required": true,
+            "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+          }
+        },      
+        {
+          "id": "altPhone",
+          "type": "person attribute",
+          "uuid": "be6d2471-4152-42f5-904d-3f2274f35fe4",
+          "label": "Alternate telephone number",
+          "validation": {
+            "required": false,
+            "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+          }
+        },     
+        {
+          "id": "txSupporterName",
+          "type": "person attribute",
+          "uuid": "80fcb21b-f0af-493e-bcd2-75d587fcbbe9",
+          "label": "Treatment supporter's name(if disclosed)",
+          "validation": {
+            "required": false
+          }
+        },     
+        {
+          "id": "txSupporterAddress",
+          "type": "person attribute",
+          "uuid": "0aa1708e-64a4-4edf-b02e-bc75bc4cd970",
+          "label": "Treatment supporter's address(if disclosed)",
+          "validation": {
+            "required": false
+          }
+        },     
+        {
+          "id": "txSupporterPhoneNo",
+          "type": "person attribute",
+          "uuid": "21884b9f-2300-411b-adc0-af80954c4c69",
+          "label": "Treatment supporter's telephone number",
+          "validation": {
+            "required": false,
+            "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+          }
+        },     
+        {
+          "id": "homeBasedcareProvider",
+          "type": "person attribute",
+          "uuid": "ec95bdcd-8bb5-4b29-95bc-4fe600df3f07",
+          "label": "Home-based care provided by",
+          "validation": {
+            "required": false
+          }
+        }
+        ],
+      "registrationObs": {
+        "encounterTypeUuid": "de1f9d67-b73e-4e1b-90d0-036166fc6995",
+        "registrationFormUuid": "add7abdc-59d1-11e8-9c2d-fa7ae01bbebc"
+      },
+      "fieldConfigurations": {
+        "name": {
+          "displayCapturePhoto": false,
+          "allowUnidentifiedPatients": false
+        },
+        "dateOfBirth": {
+          "useEstimatedDateOfBirth": {
+            "enabled": true,
+            "dayOfMonth": 15,
+            "month": 5
+          }
+        },
+        "gender": [
+          {
+            "id": "male",
+            "value": "Male",
+            "label": "Male"
+          },
+          {
+            "id": "female",
+            "value": "Female",
+            "label": "Female"
+          }
+        ],
+        "address": {
+          "useAddressHierarchy": {
+            "searchAddressByLevel": true
+          }
+        }
+      }
+    },
+    "@openmrs/esm-home-app": {
+      "extensionSlots": {
+        "homepage-widgets-slot": {
+          "remove": [
+            "home-appointments"
+          ]
+        },
+        "homepage-dashboard-slot": {
+          "remove": ["home-appointments"]
+        }
+      }
+    }
+  }
+  
