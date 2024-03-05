@@ -23,11 +23,11 @@
 
     <!-- track module versions
          we do so here so that we can utilise Maven to track updates, etc. -->
-    <fhir2.version>2.0.0-SNAPSHOT</fhir2.version>
+    <fhir2.version>1.10.0</fhir2.version>
     <openmrs.version>2.6.4</openmrs.version>
     <initializer.version>2.6.0</initializer.version>
     <webservices.rest.version>2.41.0</webservices.rest.version>
-    <addresshierarchy.version>2.17.0</addresshierarchy.version>
+    <addresshierarchy.version>2.15.2</addresshierarchy.version>
     <idgen.version>4.10.0</idgen.version>
     <legacyui.version>1.16.0</legacyui.version>
     <metadatamapping.version>1.6.0</metadatamapping.version>
@@ -35,12 +35,12 @@
     <openconceptlab.version>2.1.0</openconceptlab.version>
     <!-- this is request for the OCL UI -->
     <owa.version>1.14.0</owa.version>
-    <attachments.version>3.1.0</attachments.version>
-    <referencedemodata.version>2.4.0</referencedemodata.version>
-    <queue.version>2.2.1</queue.version>
-    <appointments.version>2.0.0-20231101.130425-7</appointments.version>
+    <attachments.version>3.0.0</attachments.version>
+    <referencedemodata.version>2.4.0-SNAPSHOT</referencedemodata.version>
+    <queue.version>1.0.0-alpha.1</queue.version>
+    <appointments.version>1.6.0</appointments.version>
     <teleconsultation.version>2.0.0-20230831.113926-1</teleconsultation.version>
-    <cohort.version>3.6.0</cohort.version>
+    <cohort.version>3.4.0</cohort.version>
     <reporting.version>1.25.0</reporting.version>
     <reportingrest.version>1.14.0</reportingrest.version>
     <!-- the next three are required for reporting -->
@@ -48,8 +48,16 @@
     <htmlwidgets.version>1.11.0</htmlwidgets.version>
     <serialization-xstream.version>0.2.16</serialization-xstream.version>
     <ordertemplates.version>1.0.2</ordertemplates.version>
-    <patientflags.version>3.0.5</patientflags.version>
-    <o3forms.version>2.2.0</o3forms.version>
+    <patientflags.version>3.0.6-SNAPSHOT</patientflags.version>
+    <o3forms.version>2.1.0</o3forms.version>
+    <ssemrreports.version>1.0.0-SNAPSHOT</ssemrreports.version>
+    <uiframework.version>3.23.0</uiframework.version>
+    <reportingui.version>1.11.0</reportingui.version>
+    <reportingrest.version>1.14.0</reportingrest.version>
+    <uicommons.version>2.23.0</uicommons.version>
+    <appframework.version>2.17.0</appframework.version>
+    <appui.version>1.16.0</appui.version>
+    <appframework.version>2.17.0</appframework.version>
   </properties>
 
   <dependencies>
