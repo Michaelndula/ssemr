@@ -150,27 +150,6 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "sex === 'M' || age <= 5"
-              }
-            },
-            {
-              "label": "MUAC for children and pregnant mothers",
-              "type": "obs",
-              "id": "muacAdults",
-              "questionOptions": {
-                "rendering": "number",
-                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "max": "250",
-                "min": "0"
-              },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "muac < 0 || muac > 250",
-                  "message": "MUAC should not be less than 0 or higher that 250"
-                }
-              ],
-              "hide": {
                 "hideWhenExpression": "age > 5"
               }
             },
@@ -1324,7 +1303,7 @@
               "type": "obs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientCTX !== 'true'"
+                "hideWhenExpression": "clientCTX !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1372,7 +1351,7 @@
               "type": "obs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "clientCTX !== 'true'"
+                "hideWhenExpression": "clientCTX !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               }
             },
             {
@@ -1438,6 +1417,10 @@
                   {
                     "label": "Poor",
                     "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
+                  },
+                  {
+                    "label": "Not Applicable",
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
                   }
                 ]
               },
@@ -1622,36 +1605,36 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "0 days",
-                    "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
+                    "label": "0 Days",
+                    "concept": "e9d42057-5171-4ca6-8024-2d80162a094a"
                   },
                   {
-                    "label": "30 days",
-                    "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
+                    "label": "30 Days",
+                    "concept": "c595ca5a-0392-41b3-be35-57c0def42c07"
                   },
                   {
                     "label": "60 Days",
-                    "concept": "3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f"
+                    "concept": "b86d480a-c6a9-421b-85ac-fa63fd5b31ae"
                   },
                   {
                     "label": "90 days",
-                    "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca"
+                    "concept": "e01b566c-9660-49e2-8693-b9ca4cf84b1d"
                   },
                   {
                     "label": "120 Days",
-                    "concept": "c036d8cb-9416-43b3-b23f-91913ce424a3"
+                    "concept": "ea0a6423-365f-488b-a316-f1953db1e064"
                   },
                   {
                     "label": "150 Days",
-                    "concept": "faf5d5dc-1547-49f7-941d-6fdf2d1bfa50"
+                    "concept": "8257517f-402f-4613-8dda-3d79a0c1451d"
                   },
                   {
                     "label": "180 days",
-                    "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53"
+                    "concept": "5c7c6c22-672c-4847-8723-622e0e062f4d"
                   },
                   {
                     "label": "180+ Days",
-                    "concept": "2e74862a-bb28-4e10-9a9a-b959a4a5da60"
+                    "concept": "bc8f2249-10f4-40a8-a960-952ea5f29b30"
                   }
                 ]
               },
@@ -1670,35 +1653,35 @@
                 "concept": "1c8a00ad-8d9c-48e0-8011-8f79f5f9fa05",
                 "answers": [
                   {
-                    "label": "0 days",
+                    "label": "0 pills",
                     "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
                   },
                   {
-                    "label": "30 days",
+                    "label": "30 pills",
                     "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
                   },
                   {
-                    "label": "60 Days",
+                    "label": "60 pills",
                     "concept": "3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f"
                   },
                   {
-                    "label": "90 days",
+                    "label": "90 pills",
                     "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca"
                   },
                   {
-                    "label": "120 Days",
+                    "label": "120 pills",
                     "concept": "c036d8cb-9416-43b3-b23f-91913ce424a3"
                   },
                   {
-                    "label": "150 Days",
+                    "label": "150 pills",
                     "concept": "faf5d5dc-1547-49f7-941d-6fdf2d1bfa50"
                   },
                   {
-                    "label": "180 days",
+                    "label": "180 pills",
                     "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53"
                   },
                   {
-                    "label": "180+ Days",
+                    "label": "180+ pills",
                     "concept": "2e74862a-bb28-4e10-9a9a-b959a4a5da60"
                   }
                 ]
@@ -1996,36 +1979,36 @@
                 "conceptMappings": [],
                 "answers": [
                   {
-                    "label": "0 days",
-                    "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
+                    "label": "0 Days",
+                    "concept": "e9d42057-5171-4ca6-8024-2d80162a094a"
                   },
                   {
-                    "label": "30 days",
-                    "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
+                    "label": "30 Days",
+                    "concept": "c595ca5a-0392-41b3-be35-57c0def42c07"
                   },
                   {
                     "label": "60 Days",
-                    "concept": "3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f"
+                    "concept": "b86d480a-c6a9-421b-85ac-fa63fd5b31ae"
                   },
                   {
                     "label": "90 days",
-                    "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca"
+                    "concept": "e01b566c-9660-49e2-8693-b9ca4cf84b1d"
                   },
                   {
                     "label": "120 Days",
-                    "concept": "c036d8cb-9416-43b3-b23f-91913ce424a3"
+                    "concept": "ea0a6423-365f-488b-a316-f1953db1e064"
                   },
                   {
                     "label": "150 Days",
-                    "concept": "faf5d5dc-1547-49f7-941d-6fdf2d1bfa50"
+                    "concept": "8257517f-402f-4613-8dda-3d79a0c1451d"
                   },
                   {
                     "label": "180 days",
-                    "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53"
+                    "concept": "5c7c6c22-672c-4847-8723-622e0e062f4d"
                   },
                   {
                     "label": "180+ Days",
-                    "concept": "2e74862a-bb28-4e10-9a9a-b959a4a5da60"
+                    "concept": "bc8f2249-10f4-40a8-a960-952ea5f29b30"
                   }
                 ]
               },
@@ -2041,35 +2024,35 @@
                 "concept": "3fa33347-9871-497b-81f3-7a791b9f4bae",
                 "answers": [
                   {
-                    "label": "0 days",
+                    "label": "0 pills",
                     "concept": "39ec38d1-7b35-4f05-ab87-10983da0b484"
                   },
                   {
-                    "label": "30 days",
+                    "label": "30 pills",
                     "concept": "7b0642e1-7607-4b0f-806e-703b195345ea"
                   },
                   {
-                    "label": "60 Days",
+                    "label": "60 pills",
                     "concept": "3cd5ec7d-ac0e-46cc-8a46-ab7628da0a4f"
                   },
                   {
-                    "label": "90 days",
+                    "label": "90 pills",
                     "concept": "af06426c-e63e-4f83-bdbc-a855c42bb0ca"
                   },
                   {
-                    "label": "120 Days",
+                    "label": "120 pills",
                     "concept": "c036d8cb-9416-43b3-b23f-91913ce424a3"
                   },
                   {
-                    "label": "150 Days",
+                    "label": "150 pills",
                     "concept": "faf5d5dc-1547-49f7-941d-6fdf2d1bfa50"
                   },
                   {
-                    "label": "180 days",
+                    "label": "180 pills",
                     "concept": "91e0bcf5-8968-4004-9e14-bb466fccaf53"
                   },
                   {
-                    "label": "180+ Days",
+                    "label": "180+ pills",
                     "concept": "2e74862a-bb28-4e10-9a9a-b959a4a5da60"
                   }
                 ]
@@ -2099,6 +2082,10 @@
                   {
                     "label": "Poor",
                     "concept": "f05f31c1-5f06-4ada-8cbd-a877cb06442a"
+                  },
+                  {
+                    "label": "Not Applicable",
+                    "concept": "f2355233-c552-4cd6-802f-0c7c75221f03"
                   }
                 ]
               },

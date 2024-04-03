@@ -30,7 +30,7 @@
     "@ssemr/esm-reports-dashboard":"5.1.8",
     "@ssemr/esm-patient-registration-app": "1.3.8",
     "@ssemr/esm-patient-hiv-art-app": "5.5.1",
-    "@ssemr/esm-patient-panel-app": "5.3.5"
+    "@ssemr/esm-patient-panel-app": "5.3.6"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",

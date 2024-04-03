@@ -2,7 +2,7 @@
   "name": "C. 6 - Personal, Family, and treatment history",
   "published": true,
   "retired": false,
-	"encounter": "Personal Family and treatment history",
+  "encounter": "Personal Family and treatment history",
   "pages": [
     {
       "label": "Personal history",
@@ -1016,6 +1016,26 @@
               ]
             },
             {
+              "label": "Is CD4 Done?",
+              "required": true,
+              "type": "obs",
+              "id": "cd4Done",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2652c9e7-72c5-48ae-b6ee-0bd3dcb65fca",
+                "answers": [
+                  {
+                    "concept": "78763e68-104e-465d-8ce3-35f9edfb083d",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "b497171e-0410-4d8d-bbd4-7e1a8f8b504e",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
               "label": "CD4 Count",
               "id": "cd4Count",
               "required": false,
@@ -1027,7 +1047,7 @@
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age <= 5"
+                "hideWhenExpression": "age <= 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
@@ -1045,12 +1065,11 @@
                 "answers": [],
                 "concept": "809dd0f5-ce54-441c-b835-a2a8b06a6140",
                 "rendering": "numeric",
-                "min": 0,
-                "max": 100
+                "min": 0
               },
               "type": "obs",
               "hide": {
-                "hideWhenExpression": "age > 5"
+                "hideWhenExpression": "age > 5 || cd4Done !== '78763e68-104e-465d-8ce3-35f9edfb083d'"
               },
               "validators": [
                 {
