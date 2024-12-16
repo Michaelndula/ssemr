@@ -5,7 +5,7 @@
     "@openmrs/esm-devtools-app": "next",
     "@openmrs/esm-fast-data-entry-app": "next",
     "@openmrs/esm-form-builder-app": "next",
-    "@openmrs/esm-form-engine-app": "next",
+    "@openmrs/esm-form-entry-app": "next",
     "@openmrs/esm-generic-patient-widgets-app": "next",
     "@openmrs/esm-help-menu-app": "next",
     "@openmrs/esm-home-app": "next",
@@ -31,7 +31,7 @@
     "@ssemr/esm-patient-flags-app": "1.0.2",
     "@ssemr/esm-patient-list-management-app": "next",
     "@ssemr/esm-reports-dashboard":"next",
-    "@ssemr/esm-patient-forms-app": "next",
+    "@ssemr/esm-patient-forms-app": "1.0.3",
     "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507"
   },
   "excludedFrontendModules": []
