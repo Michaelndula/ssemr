@@ -12,4 +12,4 @@ mambaetl.analysis.incremental_mode=1
 #MambaETL will automatically flatten all encounters in the OpenMRS database if set to 1
 mambaetl.analysis.automated_flattening=0
 #The ETL interval in seconds. ETL will run every number of seconds specified here
-mambaetl.analysis.etl_interval=60
+mambaetl.analysis.etl_interval=43200
