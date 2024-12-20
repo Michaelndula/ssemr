@@ -2,7 +2,7 @@
 #--------------------------------------------
 # Dev Stage - Assembles and Builds Frontend
 #--------------------------------------------
-FROM --platform=$BUILDPLATFORM node:18-alpine as dev
+FROM --platform=$BUILDPLATFORM node:lts-alpine as dev
 
 ARG APP_SHELL_VERSION=next
 
@@ -14,7 +14,7 @@ COPY spa-build-config.json .
 COPY /assets /app/assets
 
 ARG CACHE_BUST
-RUN npm install -g npm@10.9.1
+RUN npm install -g npm@11.0.0
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 
