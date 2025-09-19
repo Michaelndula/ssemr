@@ -58,6 +58,9 @@
     <o3forms.version>2.2.0</o3forms.version>
     <emrapi.version>2.1.0</emrapi.version>
     <event.version>2.10.0</event.version>
+
+    <!--SSEMR Modules-->
+    <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
   </properties>
 
    <dependencies>
@@ -250,6 +253,12 @@
       <groupId>org.openmrs</groupId>
       <artifactId>event-omod</artifactId>
       <version>${event.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>ssemrws-omod</artifactId>
+      <version>${ssemrws.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
