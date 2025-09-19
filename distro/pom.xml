@@ -60,7 +60,7 @@
     <event.version>2.10.0</event.version>
 
     <!--SSEMR Modules-->
-    <ssemrws.version>1.0.1-SNAPSHOT</ssemrws.version>
+    <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
   </properties>
 
    <dependencies>
