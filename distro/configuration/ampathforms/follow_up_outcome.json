@@ -98,6 +98,10 @@
                   {
                     "label": "Unknown Cause",
                     "concept": "4d48b677-fc7f-4177-98bd-1c9944677d1a"
+                  },
+                  {
+                    "concept": "ddd9bc88-6c08-4d4c-91b2-3146f7e084d8",
+                    "label": "Other Cause of Death"
                   }
                 ]
               },
@@ -105,6 +109,18 @@
                 "hideWhenExpression": "isDeath !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "validators": []
+            },
+            {
+              "id": "otherCauseOfDeathSpecify",
+              "label": "Other Cause of Death Specify",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "345b9016-89a5-4a71-a712-be6fd03a0570"
+              },
+              "hide": {
+                "hideWhenExpression": "causeOfDeath !=='ddd9bc88-6c08-4d4c-91b2-3146f7e084d8'"
+              }
             },
             {
               "label": "Specify Other infectious and parasitic disease",

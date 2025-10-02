@@ -20,7 +20,9 @@ ccdfc79c-0c19-4731-ab95-f41a82480069,,Location,Location,Location,,,,Question,Tex
 e03e32aa-cfa1-47a4-b24e-c37af2b28836,,"Cause Of Death, Other Other infectious  and parasitic disease",Other Other infectious  and parasitic disease,"Cause Of Death, Other Other infectious  and parasitic disease",,,,Misc,N/A,
 1c4cf2ab-4982-4f81-817c-0e2cf9c33aba,,"Cause Of Death, Non-natural causes (accident/war)",Non-natural causes (accident/war),"Cause Of Death, Non-natural causes (accident/war)",,,,Misc,N/A,
 4d48b677-fc7f-4177-98bd-1c9944677d1a,,"Cause Of Death,Unknown Cause",Unknown Cause,"Cause Of Death,Unknown Cause",,,,Misc,N/A,
-4acd75d7-1bd1-40a1-8ba2-0653893319ef,,"End of Follow-up,Cause Of Death",Cause Of Death,Cause Of Death,,,,Question,Coded,"Cause Of Death, TB;Cause Of Death, Cancer;Cause Of Death, Other Other infectious  and parasitic disease;Cause Of Death, Non-natural causes (accident/war);Cause Of Death,Unknown Cause"
+ddd9bc88-6c08-4d4c-91b2-3146f7e084d8,,"Cause Of Death,Other",Other,"Cause Of Death,Other",,,,Misc,N/A,
+4acd75d7-1bd1-40a1-8ba2-0653893319ef,,"End of Follow-up,Cause Of Death",Cause Of Death,Cause Of Death,,,,Question,Coded,"Cause Of Death, TB;Cause Of Death, Cancer;Cause Of Death, Other Other infectious  and parasitic disease;Cause Of Death, Non-natural causes (accident/war);Cause Of Death,Unknown Cause,Cause OfDeath,Other"
+345b9016-89a5-4a71-a712-be6fd03a0570,,"End of Follow-up, Other Cause Of Death",Other Cause of Death,Other Cause Of Death,,,,Question,Text,
 0dbb963d-fd31-4aa9-a31a-0e8c10367a2e,,Traced patient,Traced patient,Traced patient,,,,Question,Coded,"Yes;
 No"
 b8f1bfaf-c969-482e-bf2f-4f8ac95456a0,,Self Transfer Information,Self Transfer Information,Self Transfer Information,,,,Misc,N/A,
