@@ -63,6 +63,13 @@
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
   </properties>
 
+    <repositories>
+        <repository>
+            <id>repsy</id>
+            <url>https://repo.repsy.io/mvn/intellisoftdev/default</url>
+        </repository>
+    </repositories>
+
    <dependencies>
     <dependency>
       <groupId>org.openmrs.web</groupId>
@@ -352,6 +359,15 @@
   </build>
 
   <profiles>
+    <profile>
+      <id>repsy</id>
+      <repositories>
+        <repository>
+          <id>repsy</id>
+          <url>https://repo.repsy.io/mvn/intellisoftdev/default</url>
+        </repository>
+      </repositories>
+    </profile>
     <profile>
       <id>validator</id>
       <build>
