@@ -9,12 +9,16 @@ ARG APP_SHELL_VERSION=next
 RUN mkdir -p /app
 WORKDIR /app
 
+RUN echo "//repo.repsy.io/npm/intellisoftdev/ssemr/:_authToken=rdt-7xHrEKenpn_hrmZXRqb827dWwpZinFk1zhcOoaOIikM" > .npmrc && \
+    echo "@ssemrapp:registry=https://repo.repsy.io/npm/intellisoftdev/ssemr/" >> .npmrc && \
+    echo "registry=https://registry.npmjs.org/" >> .npmrc
+
 COPY spa-assemble-config.json .
 COPY spa-build-config.json .
 COPY /assets /app/assets
 
 ARG CACHE_BUST
-RUN npm install -g npm@11.6.0
+RUN npm install -g npm@latest
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 
