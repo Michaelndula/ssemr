@@ -68,7 +68,7 @@
     <repositories>
         <repository>
             <id>repsy</id>
-            <url>https://repo.repsy.io/mvn/intellisoftdev/default</url>
+            <url>https://repo.repsy.io/mvn/intellisoftdev/ssemr</url>
         </repository>
     </repositories>
 
@@ -378,7 +378,7 @@
       <repositories>
         <repository>
           <id>repsy</id>
-          <url>https://repo.repsy.io/mvn/intellisoftdev/default</url>
+          <url>https://repo.repsy.io/mvn/intellisoftdev/ssemr</url>
         </repository>
       </repositories>
     </profile>
