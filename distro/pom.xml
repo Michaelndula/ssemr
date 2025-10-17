@@ -23,7 +23,7 @@
 
     <!-- track module versions
          we do so here so that we can utilise Maven to track updates, etc. -->
-    <fhir2.version>2.0.0</fhir2.version>
+    <fhir2.version>2.8.0-SNAPSHOT</fhir2.version>
     <openmrs.version>2.8.1</openmrs.version>
     <initializer.version>2.9.0</initializer.version>
     <webservices.rest.version>3.0.0-SNAPSHOT</webservices.rest.version>
