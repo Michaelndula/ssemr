@@ -32,14 +32,14 @@
     <legacyui.version>1.23.0</legacyui.version>
     <metadatamapping.version>1.6.0</metadatamapping.version>
     <metadatasharing.version>1.9.0</metadatasharing.version>
-    <owa.version>1.14.0</owa.version>
+    <owa.version>1.16.0-SNAPSHOT</owa.version>
     <attachments.version>3.2.0-SNAPSHOT</attachments.version>
-    <referencedemodata.version>2.4.0</referencedemodata.version>
+    <referencedemodata.version>2.5.0</referencedemodata.version>
     <queue.version>2.4.0-SNAPSHOT</queue.version>
     <openconceptlab.version>2.3.0-SNAPSHOT</openconceptlab.version>
     <appointments.version>2.1.0-20250318.070530-1</appointments.version>
     <teleconsultation.version>2.0.0-20230831.113926-1</teleconsultation.version>
-    <cohort.version>3.7.1</cohort.version>
+    <cohort.version>3.7.3</cohort.version>
     <authentication.version>2.0.0-SNAPSHOT</authentication.version>
     <!-- start required for reporting -->
     <reporting.version>1.28.0</reporting.version>
@@ -55,9 +55,9 @@
     <serialization-xstream.version>0.2.16</serialization-xstream.version>
     <ordertemplates.version>1.0.2</ordertemplates.version>
     <patientflags.version>3.0.5</patientflags.version>
-    <o3forms.version>2.2.0</o3forms.version>
-    <emrapi.version>2.1.0</emrapi.version>
-    <event.version>2.10.0</event.version>
+    <o3forms.version>2.3.0</o3forms.version>
+    <emrapi.version>2.3.0</emrapi.version>
+    <event.version>3.0.0</event.version>
 
     <!--SSEMR Modules-->
     <ssemrws.version>1.0.0-SNAPSHOT</ssemrws.version>
