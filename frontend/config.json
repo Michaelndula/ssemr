@@ -89,7 +89,8 @@
         "remove": ["patient-flag-tags"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "add": ["allergies-details-widget", "immunization-overview-widget"]
+        "add": ["allergies-details-widget", "immunization-overview-widget"],
+        "remove": ["vitals-overview-widget"]
       },
       "patient-chart-dashboard-slot": {
         "remove": ["test-results-summary-dashboard", "results-summary-dashboard", 
@@ -466,6 +467,19 @@
     },
     "Display conditions": {
       "privileges": ["View Vitals and Biometrics"]
+    }
+  },
+  "@ssemr/esm-patient-summary-app": {
+    "viralLoad": {
+      "useFormEngine": true,
+      "formName": "F. 8 - Follow up",
+      "formUuid": "0ea6b2d5-28cc-3a65-9155-b60e0c09d118",
+      "encounterTypeUuid": "e8481555-9dd1-4bb5-ba8c-cb721dafb166"
+    },
+    "concepts": {
+      "dateCollected": "fc684917-4deb-42cf-9245-8a13c6a232bc",
+      "dateVLResultsReceived": "80e34f1b-26e8-49ea-9b6e-d7d903a91e26",
+      "viralLoadValue": "01c3ce55-b7eb-45f5-93d5-bace353e3cfd"
     }
   }
 }
