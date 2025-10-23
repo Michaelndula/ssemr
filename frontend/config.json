@@ -89,8 +89,7 @@
         "remove": ["patient-flag-tags"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "add": ["allergies-details-widget", "immunization-overview-widget"],
-        "remove": ["vitals-overview-widget"]
+        "add": ["allergies-details-widget", "immunization-overview-widget"]
       },
       "patient-chart-dashboard-slot": {
         "remove": ["test-results-summary-dashboard", "results-summary-dashboard", 
