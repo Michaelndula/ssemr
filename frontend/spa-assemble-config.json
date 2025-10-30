@@ -30,7 +30,7 @@
     "@ssemr/esm-reports-dashboard":"next",
     "@ssemr/esm-patient-forms-app": "next",
     "@ohri/openmrs-esm-ohri-form-render-app":"2.3.7-pre.507",
-    "@openmrs/esm-reports-app": "4.2.1-pre.305"
+    "@openmrs/esm-reports-app": "4.2.2-pre.356"
   },
   "excludedFrontendModules": []
 }
