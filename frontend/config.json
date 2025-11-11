@@ -328,8 +328,36 @@
         "validation": {
           "required": false
         }
+      },
+      {
+        "id": "address.country",
+        "type": "address",
+        "label": "Country"
+      },
+      {
+        "id": "address.countyDistrict",
+        "type": "address",
+        "label": "County"
+      },
+      {
+        "id": "address.stateProvince",
+        "type": "address",
+        "label": "State"
+      },
+      {
+        "id": "address.address3",
+        "type": "address",
+        "label": "Payam"
+      },
+      {
+        "id": "address.cityVillage",
+        "type": "address",
+        "label": "Village/Town",
+        "validation": {
+          "required": true
+        }
       }
-      ],
+    ],
     "registrationObs": {
       "encounterTypeUuid": "f469b65f-a4f6-4723-989a-46090de6a0e5",
       "registrationFormUuid": "50d7605c-9670-331c-bf19-5794548c8540"
@@ -361,6 +389,13 @@
       "address": {
         "label":"Address (search by payam)",
         "useAddressHierarchy": {
+          "useAddressHierarchyLabel": {
+            "country": "Country",
+            "countyDistrict": "County",
+            "stateProvince": "State",
+            "address3": "Payam",
+            "cityVillage": "Village/Town"
+          },
           "searchAddressByLevel": true
         }
       },

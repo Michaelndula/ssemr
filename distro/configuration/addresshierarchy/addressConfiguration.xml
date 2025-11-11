@@ -1,20 +1,44 @@
 <addressConfiguration>
     <addressComponents>
-		<addressComponent>
-            <field>ADDRESS_6</field>
-            <nameMapping>Location.neighborhood</nameMapping>
+        <addressComponent>
+            <field>COUNTRY</field>
+            <nameMapping>Country</nameMapping>
             <sizeMapping>40</sizeMapping>
-			<elementDefault>addresshierarchy.healthFacility</elementDefault>
             <requiredInHierarchy>true</requiredInHierarchy>
         </addressComponent>
         <addressComponent>
-            <field>ADDRESS_5</field>
-            <nameMapping>Location.cityVillage</nameMapping>
+            <field>COUNTY_DISTRICT</field>
+            <nameMapping>County</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>STATE_PROVINCE</field>
+            <nameMapping>State</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>true</requiredInHierarchy>
+        </addressComponent>
+        <addressComponent>
+            <field>ADDRESS_3</field>
+            <nameMapping>Payam</nameMapping>
             <sizeMapping>40</sizeMapping>
             <requiredInHierarchy>false</requiredInHierarchy>
         </addressComponent>
-	</addressComponents>
-    <lineByLineFormat/>
+        <addressComponent>
+            <field>CITY_VILLAGE</field>
+            <nameMapping>Village/Town</nameMapping>
+            <sizeMapping>40</sizeMapping>
+            <requiredInHierarchy>false</requiredInHierarchy>
+        </addressComponent>
+    </addressComponents>
+
+    <lineByLineFormat>
+        <string>country</string>
+        <string>countyDistrict</string>
+        <string>stateProvince</string>
+        <string>address3</string>
+        <string>cityVillage</string>
+    </lineByLineFormat>
     <addressHierarchyFile>
         <filename>ihs_address_hierachy.csv</filename>
         <entryDelimiter>,</entryDelimiter>
